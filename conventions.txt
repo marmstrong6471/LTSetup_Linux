@@ -1,0 +1,7 @@
+Naming and code conventions
+
+btn_(name) - Buttons
+cb_(name) - Checkboxes
+rb_(name) - Radio buttons
+txt_(name) - Text input
+fs_(name) - Filesystem (browsing for a file, etc)
