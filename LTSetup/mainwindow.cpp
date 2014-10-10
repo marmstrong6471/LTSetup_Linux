@@ -1,5 +1,6 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+#include "filesystem.h"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -15,5 +16,9 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_btn_genfile_clicked()
 {
+    filesystem fsys;
 
+    QString filename = "./testfile.txt";
+
+    fsys.write_file(filename);
 }
