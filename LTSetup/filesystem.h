@@ -8,7 +8,7 @@
 class filesystem
 {
 public:
-    void write_file(QFile Filename)
+    void write_file(QString Filename)
     {
 
     }
