@@ -5,10 +5,16 @@
 #include <QTextStream>
 #include <QString>
 
-class filesystem
+class FileSystem
 {
+private:
+    bool backup_file(QString filename)
+    {
+
+    }
+
 public:
-    void write_file(QString Filename)
+    void write_file(QString filename)
     {
 
     }

@@ -4,9 +4,12 @@
 #include <QTextStream>
 #include <QString>
 
-class filesystem
-{
-public:
+
+    bool backup_file(QString filename)
+    {
+
+    }
+
     void write_file(QString filename)
     {
         QFile config(filename);
@@ -23,4 +26,3 @@ public:
         config.flush();
         config.close();
     }
-};
