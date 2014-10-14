@@ -26,3 +26,14 @@
         config.flush();
         config.close();
     }
+
+    bool file_wrapper(QString filename)
+    {
+        if(!write_file(filename))
+        {
+            QDebug() << "File write failed";
+            return false;
+        }
+        else
+            return true;
+    }

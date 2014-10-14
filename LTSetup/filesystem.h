@@ -12,9 +12,13 @@ private:
     {
 
     }
+    void write_file(QString filename)
+    {
+
+    }
 
 public:
-    void write_file(QString filename)
+    bool file_wrapper(QString filename)
     {
 
     }

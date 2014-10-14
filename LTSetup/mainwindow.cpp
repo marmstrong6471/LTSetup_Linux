@@ -16,9 +16,7 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_btn_genfile_clicked()
 {
-    filesystem fsys;
-
     QString filename = "./testfile.txt";
 
-    filesystem::fsys.write_file(filename);
+
 }
