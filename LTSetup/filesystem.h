@@ -11,17 +11,17 @@ private:
     bool backup_file(QString filename)
     {
 
-    }
+    };
     void write_file(QString filename)
     {
 
-    }
+    };
 
 public:
     bool file_wrapper(QString filename)
     {
 
-    }
+    };
 };
 
 #endif // FILESYSTEM_H
