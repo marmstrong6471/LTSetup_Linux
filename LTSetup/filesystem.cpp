@@ -18,13 +18,18 @@
     bool FileSystem::backup_file()
     {
         QFile file("lts.conf");
+        QFile bak("lts.conf.bak");
         QString bak_name = "lts.conf.bak";
 
+        if(bak.exists())
+        {
+            bak.remove();
+        }
         file.copy(bak_name);
         return true;
     }
 
-    bool FileSystem::write_file(QString *settings)
+    bool FileSystem::write_file(QString settings)
     {
         QFile file("lts.conf");
 
@@ -37,6 +42,7 @@
         }
 
         QTextStream lts_settings(&file);
+        lts_settings << settings;
 
         file.flush();
         file.close();

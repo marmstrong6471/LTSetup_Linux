@@ -12,7 +12,7 @@ private:
 public:
     FileSystem();
     ~FileSystem();
-    bool write_file(QString *settings);
+    bool write_file(QString settings);
 };
 
 #endif // FILESYSTEM_H

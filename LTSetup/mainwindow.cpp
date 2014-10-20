@@ -19,6 +19,6 @@ void MainWindow::on_btn_genfile_clicked()
     FileSystem fsys;
     QString test_data = "Test test test";
 
-    //fsys.write_file(test_data);
+    fsys.write_file(test_data);
 
 }
