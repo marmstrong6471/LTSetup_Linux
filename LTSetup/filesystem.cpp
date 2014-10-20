@@ -5,37 +5,40 @@
 #include <QString>
 
 
-
-    bool backup_file(QString filename)
+    FileSystem::FileSystem()
     {
+
+    }
+
+    FileSystem::~FileSystem()
+    {
+
+    }
+
+    bool FileSystem::backup_file()
+    {
+        QFile file("lts.conf");
+        QString bak_name = "lts.conf.bak";
+
+        file.copy(bak_name);
         return true;
     }
 
-    bool write_file(QString filename)
+    bool FileSystem::write_file(QString *settings)
     {
-        QFile config(filename);
+        QFile file("lts.conf");
 
-        if(!config.open(QFile::WriteOnly | QFile::Text))
+        backup_file();
+
+        if(!file.open(QFile::WriteOnly | QFile::Text))
         {
-            QDebug("Could not open file for writing");
+            qDebug() << "Could not open file for writing" << endl;
             return false;
         }
 
-        QTextStream lts_settings(&config);
-        out << "Test data";
+        QTextStream lts_settings(&file);
 
-        config.flush();
-        config.close();
+        file.flush();
+        file.close();
         return true;
-    }
-
-    bool file_wrapper(QString filename)
-    {
-        if(!write_file(filename))
-        {
-            QDebug("File write failed");
-            return false;
-        }
-        else
-            return true;
     }

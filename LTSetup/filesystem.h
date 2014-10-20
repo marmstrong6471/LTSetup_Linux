@@ -2,26 +2,17 @@
 #define FILESYSTEM_H
 
 #include <QFile>
-#include <QTextStream>
 #include <QString>
 
 class FileSystem
 {
 private:
-    bool backup_file(QString filename)
-    {
-
-    };
-    void write_file(QString filename)
-    {
-
-    };
+    bool backup_file();
 
 public:
-    bool file_wrapper(QString filename)
-    {
-
-    };
+    FileSystem();
+    ~FileSystem();
+    bool write_file(QString *settings);
 };
 
 #endif // FILESYSTEM_H
