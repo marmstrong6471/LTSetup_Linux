@@ -24,7 +24,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>6</number>
+     <number>7</number>
     </property>
     <widget class="QWidget" name="tab">
      <attribute name="title">
@@ -214,6 +214,130 @@
      <attribute name="title">
       <string>Crontab Lines</string>
      </attribute>
+     <widget class="QWidget" name="verticalLayoutWidget_31">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>0</y>
+        <width>431</width>
+        <height>261</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_33">
+       <item>
+        <widget class="QLineEdit" name="lineEdit_111"/>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEdit_112"/>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEdit_113"/>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEdit_114"/>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEdit_115"/>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEdit_116"/>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEdit_117"/>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEdit_118"/>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEdit_119"/>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEdit_120"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_32">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>0</y>
+        <width>81</width>
+        <height>261</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_34">
+       <item>
+        <widget class="QLabel" name="label_111">
+         <property name="text">
+          <string>Crontab 01</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_112">
+         <property name="text">
+          <string>Crontab 02</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_113">
+         <property name="text">
+          <string>Crontab 03</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_114">
+         <property name="text">
+          <string>Crontab 04</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_115">
+         <property name="text">
+          <string>Crontab 05</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_116">
+         <property name="text">
+          <string>Crontab 06</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_117">
+         <property name="text">
+          <string>Crontab 07</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_118">
+         <property name="text">
+          <string>Crontab 08</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_119">
+         <property name="text">
+          <string>Crontab 09</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_120">
+         <property name="text">
+          <string>Crontab 10</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
     </widget>
     <widget class="QWidget" name="tab_2">
      <attribute name="title">
@@ -729,6 +853,19 @@
      <attribute name="title">
       <string>Touchscreen</string>
      </attribute>
+     <widget class="QCheckBox" name="checkBox_29">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>0</y>
+        <width>161</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Enable Touchscreen</string>
+      </property>
+     </widget>
     </widget>
     <widget class="QWidget" name="tab_6">
      <attribute name="title">
@@ -850,6 +987,46 @@
      <attribute name="title">
       <string>Xorg</string>
      </attribute>
+     <widget class="QWidget" name="verticalLayoutWidget_33">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>191</width>
+        <height>141</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_35">
+       <item>
+        <widget class="QCheckBox" name="checkBox_30">
+         <property name="text">
+          <string>CheckBox</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="checkBox_31">
+         <property name="text">
+          <string>CheckBox</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="checkBox_32">
+         <property name="text">
+          <string>CheckBox</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="checkBox_33">
+         <property name="text">
+          <string>CheckBox</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
     </widget>
     <widget class="QWidget" name="tab_8">
      <attribute name="title">
