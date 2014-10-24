@@ -249,3 +249,12 @@ Makefile*
 *.qmlproject.user
 *.qmlproject.user.*
 *.pro.user
+
+
+
+###############
+#LTS Config files
+###############
+
+.conf
+.conf.bak
