@@ -46,5 +46,7 @@
 
         file.flush();   //Flush the file contents to ensure everything is written to disk
         file.close();
+
+        qDebug() << "File written successfully." << endl; //Give feedback after writing the file
         return true;
     }
