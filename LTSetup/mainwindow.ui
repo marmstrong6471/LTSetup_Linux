@@ -24,9 +24,9 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>7</number>
+     <number>2</number>
     </property>
-    <widget class="QWidget" name="tab">
+    <widget class="QWidget" name="tab_general">
      <attribute name="title">
       <string>General</string>
      </attribute>
@@ -39,65 +39,65 @@
         <height>261</height>
        </rect>
       </property>
-      <layout class="QVBoxLayout" name="verticalLayout">
+      <layout class="QVBoxLayout" name="vl_general_01">
        <item>
-        <widget class="QCheckBox" name="checkBox">
+        <widget class="QCheckBox" name="cb_fstab">
          <property name="text">
           <string>Configure FSTAB</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QCheckBox" name="checkBox_2">
+        <widget class="QCheckBox" name="cb_localapp">
          <property name="text">
           <string>Local Apps</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QCheckBox" name="checkBox_3">
+        <widget class="QCheckBox" name="cb_ldev">
          <property name="text">
           <string>LocalDev</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QCheckBox" name="checkBox_4">
+        <widget class="QCheckBox" name="cb_ldevdenycd">
          <property name="text">
           <string>LocalDev Deny CD</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QCheckBox" name="checkBox_5">
+        <widget class="QCheckBox" name="cb_ldevdenyfloppy">
          <property name="text">
           <string>LocalDev Deny Floppy</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QCheckBox" name="checkBox_6">
+        <widget class="QCheckBox" name="cb_ldevdenyinternal">
          <property name="text">
           <string>LocalDev Deny Internal Disks</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QCheckBox" name="checkBox_7">
+        <widget class="QCheckBox" name="cb_ldevdenyusb">
          <property name="text">
           <string>LocalDev Deny USB</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QCheckBox" name="checkBox_8">
+        <widget class="QCheckBox" name="cb_nbdswap">
          <property name="text">
           <string>NBD Swap</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QCheckBox" name="checkBox_9">
+        <widget class="QCheckBox" name="cb_localswap">
          <property name="text">
           <string>Use Local Swap</string>
          </property>
@@ -114,58 +114,58 @@
         <height>261</height>
        </rect>
       </property>
-      <layout class="QVBoxLayout" name="verticalLayout_2">
+      <layout class="QVBoxLayout" name="vl_general_02">
        <item>
-        <widget class="QLabel" name="label_3">
+        <widget class="QLabel" name="lb_dnsserver">
          <property name="text">
           <string>DNS Server</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="label_5">
+        <widget class="QLabel" name="lb_searchdomain">
          <property name="text">
           <string>Search Domain</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="label_6">
+        <widget class="QLabel" name="lb_localappextra">
          <property name="text">
           <string>Local Apps Extramounts</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="label_7">
+        <widget class="QLabel" name="lb_ldevdeny">
          <property name="text">
           <string>LocalDev Deny</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="label_4">
+        <widget class="QLabel" name="lb_nbdswapport">
          <property name="text">
           <string>NBD Swap Port</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="label_9">
+        <widget class="QLabel" name="lb_nbdswapserver">
          <property name="text">
           <string>NBD Swap Server</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="label_10">
+        <widget class="QLabel" name="lb_server">
          <property name="text">
           <string>Server</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="label_8">
+        <widget class="QLabel" name="lb_sysloghost">
          <property name="text">
           <string>Syslog Host</string>
          </property>
@@ -182,35 +182,35 @@
         <height>261</height>
        </rect>
       </property>
-      <layout class="QVBoxLayout" name="verticalLayout_3">
+      <layout class="QVBoxLayout" name="vl_general_03">
        <item>
-        <widget class="QLineEdit" name="lineEdit"/>
+        <widget class="QLineEdit" name="txt_dnsserver"/>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_2"/>
+        <widget class="QLineEdit" name="txt_searchdomain"/>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_3"/>
+        <widget class="QLineEdit" name="txt_localappextra"/>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_4"/>
+        <widget class="QLineEdit" name="txt_ldevdeny"/>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_5"/>
+        <widget class="QLineEdit" name="txt_nbdswapport"/>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_7"/>
+        <widget class="QLineEdit" name="txt_nbdswapserver"/>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_6"/>
+        <widget class="QLineEdit" name="txt_server"/>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_8"/>
+        <widget class="QLineEdit" name="txt_sysloghost"/>
        </item>
       </layout>
      </widget>
     </widget>
-    <widget class="QWidget" name="tab_12">
+    <widget class="QWidget" name="tab_crontab">
      <attribute name="title">
       <string>Crontab Lines</string>
      </attribute>
@@ -223,36 +223,36 @@
         <height>261</height>
        </rect>
       </property>
-      <layout class="QVBoxLayout" name="verticalLayout_33">
+      <layout class="QVBoxLayout" name="vl_crontab_01">
        <item>
-        <widget class="QLineEdit" name="lineEdit_111"/>
+        <widget class="QLineEdit" name="txt_crontab_01"/>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_112"/>
+        <widget class="QLineEdit" name="txt_crontab_02"/>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_113"/>
+        <widget class="QLineEdit" name="txt_crontab_03"/>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_114"/>
+        <widget class="QLineEdit" name="txt_crontab_04"/>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_115"/>
+        <widget class="QLineEdit" name="txt_crontab_05"/>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_116"/>
+        <widget class="QLineEdit" name="txt_crontab_06"/>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_117"/>
+        <widget class="QLineEdit" name="txt_crontab_07"/>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_118"/>
+        <widget class="QLineEdit" name="txt_crontab_08"/>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_119"/>
+        <widget class="QLineEdit" name="txt_crontab_09"/>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_120"/>
+        <widget class="QLineEdit" name="txt_crontab_10"/>
        </item>
       </layout>
      </widget>
@@ -265,72 +265,72 @@
         <height>261</height>
        </rect>
       </property>
-      <layout class="QVBoxLayout" name="verticalLayout_34">
+      <layout class="QVBoxLayout" name="vl_crontab_02">
        <item>
-        <widget class="QLabel" name="label_111">
+        <widget class="QLabel" name="lb_crontab_01">
          <property name="text">
           <string>Crontab 01</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="label_112">
+        <widget class="QLabel" name="lb_crontab_02">
          <property name="text">
           <string>Crontab 02</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="label_113">
+        <widget class="QLabel" name="lb_crontab_03">
          <property name="text">
           <string>Crontab 03</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="label_114">
+        <widget class="QLabel" name="lb_crontab_04">
          <property name="text">
           <string>Crontab 04</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="label_115">
+        <widget class="QLabel" name="lb_crontab_05">
          <property name="text">
           <string>Crontab 05</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="label_116">
+        <widget class="QLabel" name="lb_crontab_06">
          <property name="text">
           <string>Crontab 06</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="label_117">
+        <widget class="QLabel" name="lb_crontab_07">
          <property name="text">
           <string>Crontab 07</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="label_118">
+        <widget class="QLabel" name="lb_crontab_08">
          <property name="text">
           <string>Crontab 08</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="label_119">
+        <widget class="QLabel" name="lb_crontab_09">
          <property name="text">
           <string>Crontab 09</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="label_120">
+        <widget class="QLabel" name="lb_crontab_10">
          <property name="text">
           <string>Crontab 10</string>
          </property>
@@ -339,7 +339,7 @@
       </layout>
      </widget>
     </widget>
-    <widget class="QWidget" name="tab_2">
+    <widget class="QWidget" name="tab_scripts">
      <attribute name="title">
       <string>Scripts and Modules</string>
      </attribute>
@@ -352,7 +352,7 @@
         <height>261</height>
        </rect>
       </property>
-      <layout class="QVBoxLayout" name="verticalLayout_4">
+      <layout class="QVBoxLayout" name="vl_scripts_01">
        <item>
         <widget class="QLabel" name="label">
          <property name="text">
@@ -434,7 +434,7 @@
         <height>261</height>
        </rect>
       </property>
-      <layout class="QVBoxLayout" name="verticalLayout_5">
+      <layout class="QVBoxLayout" name="vl_scripts_02">
        <item>
         <widget class="QLineEdit" name="lineEdit_10"/>
        </item>
@@ -476,7 +476,7 @@
         <height>261</height>
        </rect>
       </property>
-      <layout class="QVBoxLayout" name="verticalLayout_6">
+      <layout class="QVBoxLayout" name="vl_scripts_03">
        <item>
         <widget class="QLabel" name="label_19">
          <property name="text">
