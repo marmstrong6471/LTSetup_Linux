@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QString>
 
 namespace Ui {
 class MainWindow;
@@ -17,6 +18,8 @@ public:
 
 private slots:
     void on_btn_genfile_clicked();
+
+    void on_btn_versionsel_clicked();
 
 private:
     Ui::MainWindow *ui;
