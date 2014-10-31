@@ -35,3 +35,18 @@ void MainWindow::on_btn_versionsel_clicked()
    versiondialog.exec();
 
 }
+
+void MainWindow::on_cb_crontab_toggled(bool checked)
+{
+    if (checked)
+    {
+        QString tabname = "Crontab Lines";
+        ui->tabWidget->insertTab(1, crontab_tab, tabname);
+
+    }
+    else if (!checked)
+    {
+        crontab_tab = ui->tabWidget->widget(1);
+        ui->tabWidget->removeTab(1);
+    }
+}

@@ -21,6 +21,8 @@ private slots:
 
     void on_btn_versionsel_clicked();
 
+    void on_cb_crontab_toggled(bool checked);
+
 private:
     Ui::MainWindow *ui;
 };
