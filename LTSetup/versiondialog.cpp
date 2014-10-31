@@ -1,6 +1,7 @@
 #include "versiondialog.h"
 #include "ui_versiondialog.h"
 #include "common.h"
+#include "mainwindow.h"
 
 VersionDialog::VersionDialog(QWidget *parent) :
     QDialog(parent),
@@ -19,5 +20,7 @@ void VersionDialog::on_pushButton_clicked()
 {
         versionnum = ui->combox_version->currentText();
 
+
         this->close();
+
 }
