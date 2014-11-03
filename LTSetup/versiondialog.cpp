@@ -18,9 +18,7 @@ VersionDialog::~VersionDialog()
 
 void VersionDialog::on_pushButton_clicked()
 {
-        versionnum = ui->combox_version->currentText();
-
-
-        this->close();
+        //versionnum = ui->combox_version->currentText();
+        emit version_out(ui->combox_version->currentText());
 
 }
