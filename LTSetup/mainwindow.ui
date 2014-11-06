@@ -24,7 +24,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>10</number>
     </property>
     <widget class="QWidget" name="tab_general">
      <attribute name="title">
@@ -853,17 +853,45 @@
      <attribute name="title">
       <string>Touchscreen</string>
      </attribute>
-     <widget class="QCheckBox" name="checkBox_29">
+     <widget class="QTextEdit" name="textEdit">
       <property name="geometry">
        <rect>
-        <x>20</x>
-        <y>0</y>
-        <width>161</width>
-        <height>61</height>
+        <x>300</x>
+        <y>10</y>
+        <width>341</width>
+        <height>241</height>
+       </rect>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt;&quot;&gt; X_TOUCH_DEVICE     Path to device   /dev/ttyS0    set device for&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt;&quot;&gt;                                                             touchscreen&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt;&quot;&gt;           X_TOUCH_DRIVER     Touchscreen      elographics   set driver for&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt;&quot;&gt;                              driver                         touchscreen&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt;&quot;&gt;           X_TOUCH_MAXX       integer          3588          Xmax&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt;&quot;&gt;           X_TOUCH_MAXY       integer          3526          Ymax&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt;&quot;&gt;           X_TOUCH_MINX       integer          433           Xmin&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Courier New,courier'; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt;&quot;&gt;           X_TOUCH_MINY       integer          569           Ymin&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt;&quot;&gt;           X_TOUCH_UNDELAY    integer          10            Untouch delay&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt;&quot;&gt;           X_TOUCH_RTPDELAY   integer          10            Repeat touch&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt;&quot;&gt;                                                             delay&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBox">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>111</width>
+        <height>17</height>
        </rect>
       </property>
       <property name="text">
-       <string>Enable Touchscreen</string>
+       <string>Enable Touch</string>
       </property>
      </widget>
     </widget>
@@ -1000,30 +1028,162 @@
        <item>
         <widget class="QCheckBox" name="checkBox_30">
          <property name="text">
-          <string>CheckBox</string>
+          <string>Use XFS</string>
          </property>
         </widget>
        </item>
        <item>
         <widget class="QCheckBox" name="checkBox_31">
          <property name="text">
-          <string>CheckBox</string>
+          <string>X Mouse Emulate 3BTN</string>
          </property>
         </widget>
        </item>
        <item>
         <widget class="QCheckBox" name="checkBox_32">
          <property name="text">
-          <string>CheckBox</string>
+          <string>X Numlock</string>
          </property>
         </widget>
        </item>
        <item>
         <widget class="QCheckBox" name="checkBox_33">
          <property name="text">
-          <string>CheckBox</string>
+          <string>Configure X</string>
          </property>
         </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_15">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>140</y>
+        <width>91</width>
+        <height>121</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QLabel" name="label_3">
+         <property name="text">
+          <string>X Config</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_5">
+         <property name="text">
+          <string>X Ram Percent</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_4">
+         <property name="text">
+          <string>X Virtual</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_17">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>140</y>
+        <width>221</width>
+        <height>121</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QLineEdit" name="lineEdit_2"/>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEdit_3">
+         <property name="text">
+          <string>100</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEdit"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_18">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>0</y>
+        <width>121</width>
+        <height>141</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <widget class="QLabel" name="label_6">
+         <property name="text">
+          <string>XFS Server</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_8">
+         <property name="text">
+          <string>XDM Server</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_9">
+         <property name="text">
+          <string>X Server</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_7">
+         <property name="text">
+          <string>X Mouse Device</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_10">
+         <property name="text">
+          <string>X Moust Protocol</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_19">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>0</y>
+        <width>311</width>
+        <height>141</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <item>
+        <widget class="QLineEdit" name="lineEdit_4"/>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEdit_5"/>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEdit_6"/>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEdit_7"/>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEdit_8"/>
        </item>
       </layout>
      </widget>
@@ -1056,6 +1216,503 @@
      <attribute name="title">
       <string>Screen</string>
      </attribute>
+     <widget class="QWidget" name="verticalLayoutWidget_20">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>141</width>
+        <height>261</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_5">
+       <item>
+        <widget class="QLabel" name="label_49">
+         <property name="text">
+          <string>Screen 01</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_52">
+         <property name="text">
+          <string>Screen 02</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_54">
+         <property name="text">
+          <string>Screen 03</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_55">
+         <property name="text">
+          <string>Screen 04</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_56">
+         <property name="text">
+          <string>Screen 05</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_57">
+         <property name="text">
+          <string>Screen 06</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_58">
+         <property name="text">
+          <string>Screen 07</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_53">
+         <property name="text">
+          <string>Screen 08</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_21">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>0</y>
+        <width>91</width>
+        <height>261</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_6">
+       <item>
+        <widget class="QComboBox" name="comboBox_2">
+         <item>
+          <property name="text">
+           <string>ldm</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>rdesktop</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>xdmcp</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>shell</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>telnet</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBox">
+         <item>
+          <property name="text">
+           <string>ldm</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>rdesktop</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>xdmcp</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>shell</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>telnet</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBox_3">
+         <item>
+          <property name="text">
+           <string>ldm</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>rdesktop</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>xdmcp</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>shell</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>telnet</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBox_4">
+         <item>
+          <property name="text">
+           <string>ldm</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>rdesktop</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>xdmcp</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>shell</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>telnet</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBox_5">
+         <item>
+          <property name="text">
+           <string>ldm</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>rdesktop</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>xdmcp</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>shell</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>telnet</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBox_7">
+         <item>
+          <property name="text">
+           <string>ldm</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>rdesktop</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>xdmcp</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>shell</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>telnet</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBox_6">
+         <item>
+          <property name="text">
+           <string>ldm</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>rdesktop</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>xdmcp</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>shell</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>telnet</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBox_8">
+         <item>
+          <property name="text">
+           <string>ldm</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>rdesktop</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>xdmcp</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>shell</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>telnet</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_22">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>0</y>
+        <width>101</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_7">
+       <item>
+        <widget class="QLabel" name="label_60">
+         <property name="text">
+          <string>Screen 09</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_59">
+         <property name="text">
+          <string>Screen 10</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_61">
+         <property name="text">
+          <string>Screen 11</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_62">
+         <property name="text">
+          <string>Screen 12</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_63">
+         <property name="text">
+          <string>Telnet Host</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_23">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>0</y>
+        <width>91</width>
+        <height>131</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_15">
+       <item>
+        <widget class="QComboBox" name="comboBox_9">
+         <item>
+          <property name="text">
+           <string>ldm</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>rdesktop</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>xdmcp</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>shell</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>telnet</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBox_10">
+         <item>
+          <property name="text">
+           <string>ldm</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>rdesktop</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>xdmcp</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>shell</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>telnet</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBox_12">
+         <item>
+          <property name="text">
+           <string>ldm</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>rdesktop</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>xdmcp</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>shell</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>telnet</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBox_11">
+         <item>
+          <property name="text">
+           <string>ldm</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>rdesktop</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>xdmcp</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>shell</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>telnet</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_51">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>140</y>
+        <width>221</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
     </widget>
     <widget class="QWidget" name="tab_10">
      <attribute name="title">
@@ -1066,6 +1723,78 @@
      <attribute name="title">
       <string>Local Applications</string>
      </attribute>
+     <widget class="QCheckBox" name="checkBox_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>70</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Local Apps</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBox_3">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>50</y>
+        <width>111</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Local Apps Menu</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_64">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>90</y>
+        <width>131</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Local Apps Menu Items</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="textEdit_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>110</y>
+        <width>291</width>
+        <height>151</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_65">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>90</y>
+        <width>131</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Local Apps Whitelist</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="textEdit_3">
+      <property name="geometry">
+       <rect>
+        <x>353</x>
+        <y>110</y>
+        <width>291</width>
+        <height>151</height>
+       </rect>
+      </property>
+     </widget>
     </widget>
    </widget>
    <widget class="QPushButton" name="btn_genfile">
