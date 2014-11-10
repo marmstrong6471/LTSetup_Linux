@@ -8,6 +8,7 @@ VersionDialog::VersionDialog(QWidget *parent) :
     ui(new Ui::VersionDialog)
 {
     ui->setupUi(this);
+    QObject::connect(ui->pushButton, SIGNAL(accepted()), this, SLOT(accept()));
 }
 
 VersionDialog::~VersionDialog()
