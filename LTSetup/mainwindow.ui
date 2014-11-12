@@ -24,7 +24,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>10</number>
+     <number>2</number>
     </property>
     <widget class="QWidget" name="tab_general">
      <attribute name="title">
@@ -45,12 +45,18 @@
          <property name="text">
           <string>Configure FSTAB</string>
          </property>
+         <property name="CONFIGURE_FSTAB=" stdset="0">
+          <string/>
+         </property>
         </widget>
        </item>
        <item>
         <widget class="QCheckBox" name="cb_localapp">
          <property name="text">
           <string>Local Apps</string>
+         </property>
+         <property name="LOCAL_APPS=" stdset="0">
+          <string/>
          </property>
         </widget>
        </item>
@@ -59,12 +65,18 @@
          <property name="text">
           <string>LocalDev</string>
          </property>
+         <property name="LOCALDEV=" stdset="0">
+          <string/>
+         </property>
         </widget>
        </item>
        <item>
         <widget class="QCheckBox" name="cb_ldevdenycd">
          <property name="text">
           <string>LocalDev Deny CD</string>
+         </property>
+         <property name="LOCALDEV_DENY_CD=" stdset="0">
+          <string/>
          </property>
         </widget>
        </item>
@@ -73,12 +85,18 @@
          <property name="text">
           <string>LocalDev Deny Floppy</string>
          </property>
+         <property name="LOCALDEV_DENY_FLOPPY=" stdset="0">
+          <string/>
+         </property>
         </widget>
        </item>
        <item>
         <widget class="QCheckBox" name="cb_ldevdenyinternal">
          <property name="text">
           <string>LocalDev Deny Internal Disks</string>
+         </property>
+         <property name="LOCALDEV_DENY_INTERNAL_DISKS=" stdset="0">
+          <string/>
          </property>
         </widget>
        </item>
@@ -87,6 +105,9 @@
          <property name="text">
           <string>LocalDev Deny USB</string>
          </property>
+         <property name="LOCALDEV_DENY_USB=" stdset="0">
+          <string/>
+         </property>
         </widget>
        </item>
        <item>
@@ -94,12 +115,18 @@
          <property name="text">
           <string>NBD Swap</string>
          </property>
+         <property name="NBD_SWAP=" stdset="0">
+          <string/>
+         </property>
         </widget>
        </item>
        <item>
         <widget class="QCheckBox" name="cb_localswap">
          <property name="text">
           <string>Use Local Swap</string>
+         </property>
+         <property name="USE_LOCAL_SWAP=" stdset="0">
+          <string/>
          </property>
         </widget>
        </item>
@@ -184,28 +211,60 @@
       </property>
       <layout class="QVBoxLayout" name="vl_general_03">
        <item>
-        <widget class="QLineEdit" name="txt_dnsserver"/>
+        <widget class="QLineEdit" name="txt_dnsserver">
+         <property name="DNS_SERVER=" stdset="0">
+          <string/>
+         </property>
+        </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="txt_searchdomain"/>
+        <widget class="QLineEdit" name="txt_searchdomain">
+         <property name="SEARCH_DOMAIN=" stdset="0">
+          <string/>
+         </property>
+        </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="txt_localappextra"/>
+        <widget class="QLineEdit" name="txt_localappextra">
+         <property name="LOCAL_APPS_EXTRAMOUNTS=" stdset="0">
+          <string/>
+         </property>
+        </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="txt_ldevdeny"/>
+        <widget class="QLineEdit" name="txt_ldevdeny">
+         <property name="LOCALDEV_DENY=" stdset="0">
+          <string/>
+         </property>
+        </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="txt_nbdswapport"/>
+        <widget class="QLineEdit" name="txt_nbdswapport">
+         <property name="NBD_SWAP_PORT=" stdset="0">
+          <string/>
+         </property>
+        </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="txt_nbdswapserver"/>
+        <widget class="QLineEdit" name="txt_nbdswapserver">
+         <property name="NBD_SWAP_SERVER=" stdset="0">
+          <string/>
+         </property>
+        </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="txt_server"/>
+        <widget class="QLineEdit" name="txt_server">
+         <property name="SERVER=" stdset="0">
+          <string/>
+         </property>
+        </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="txt_sysloghost"/>
+        <widget class="QLineEdit" name="txt_sysloghost">
+         <property name="SYSLOG_HOST=" stdset="0">
+          <string/>
+         </property>
+        </widget>
        </item>
       </layout>
      </widget>
@@ -436,34 +495,74 @@
       </property>
       <layout class="QVBoxLayout" name="vl_scripts_02">
        <item>
-        <widget class="QLineEdit" name="lineEdit_10"/>
+        <widget class="QLineEdit" name="lineEdit_10">
+         <property name="RCFILE_01=" stdset="0">
+          <string/>
+         </property>
+        </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_9"/>
+        <widget class="QLineEdit" name="lineEdit_9">
+         <property name="RCFILE_02=" stdset="0">
+          <string/>
+         </property>
+        </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_11"/>
+        <widget class="QLineEdit" name="lineEdit_11">
+         <property name="RCFILE_03=" stdset="0">
+          <string/>
+         </property>
+        </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_12"/>
+        <widget class="QLineEdit" name="lineEdit_12">
+         <property name="RCFILE_04=" stdset="0">
+          <string/>
+         </property>
+        </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_13"/>
+        <widget class="QLineEdit" name="lineEdit_13">
+         <property name="RCFILE_05=" stdset="0">
+          <string/>
+         </property>
+        </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_15"/>
+        <widget class="QLineEdit" name="lineEdit_15">
+         <property name="RCFILE_06=" stdset="0">
+          <string/>
+         </property>
+        </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_16"/>
+        <widget class="QLineEdit" name="lineEdit_16">
+         <property name="RCFILE_07=" stdset="0">
+          <string/>
+         </property>
+        </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_18"/>
+        <widget class="QLineEdit" name="lineEdit_18">
+         <property name="RCFILE_08=" stdset="0">
+          <string/>
+         </property>
+        </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_17"/>
+        <widget class="QLineEdit" name="lineEdit_17">
+         <property name="RCFILE_09=" stdset="0">
+          <string/>
+         </property>
+        </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_14"/>
+        <widget class="QLineEdit" name="lineEdit_14">
+         <property name="RCFILE_10=" stdset="0">
+          <string/>
+         </property>
+        </widget>
        </item>
       </layout>
      </widget>
@@ -560,34 +659,74 @@
       </property>
       <layout class="QVBoxLayout" name="vl_scripts_04">
        <item>
-        <widget class="QLineEdit" name="lineEdit_19"/>
+        <widget class="QLineEdit" name="lineEdit_19">
+         <property name="MODULE_01=" stdset="0">
+          <string/>
+         </property>
+        </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_20"/>
+        <widget class="QLineEdit" name="lineEdit_20">
+         <property name="MODULE_02=" stdset="0">
+          <string/>
+         </property>
+        </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_21"/>
+        <widget class="QLineEdit" name="lineEdit_21">
+         <property name="MODULE_03=" stdset="0">
+          <string/>
+         </property>
+        </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_22"/>
+        <widget class="QLineEdit" name="lineEdit_22">
+         <property name="MODULE_04=" stdset="0">
+          <string/>
+         </property>
+        </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_24"/>
+        <widget class="QLineEdit" name="lineEdit_24">
+         <property name="MODULE_05=" stdset="0">
+          <string/>
+         </property>
+        </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_25"/>
+        <widget class="QLineEdit" name="lineEdit_25">
+         <property name="MODULE_06=" stdset="0">
+          <string/>
+         </property>
+        </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_27"/>
+        <widget class="QLineEdit" name="lineEdit_27">
+         <property name="MODULE_07=" stdset="0">
+          <string/>
+         </property>
+        </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_26"/>
+        <widget class="QLineEdit" name="lineEdit_26">
+         <property name="MODULE_08=" stdset="0">
+          <string/>
+         </property>
+        </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_28"/>
+        <widget class="QLineEdit" name="lineEdit_28">
+         <property name="MODULE_09=" stdset="0">
+          <string/>
+         </property>
+        </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_23"/>
+        <widget class="QLineEdit" name="lineEdit_23">
+         <property name="MODULE_10=" stdset="0">
+          <string/>
+         </property>
+        </widget>
        </item>
       </layout>
      </widget>
