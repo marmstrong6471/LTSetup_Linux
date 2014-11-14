@@ -12,12 +12,10 @@ int main(int argc, char *argv[])
 
 
 
-    //QObject::connect(v.ui->pushButton, SIGNAL(version_out(QString)), w, SLOT(slot_versionupdate));
+    QObject::connect(&version_select, SIGNAL(version_out(QString)), &main_window, SLOT(slot_versionupdate(QString)));
 
-    if(version_select.exec() == QDialog::Accepted)
-    {
-        main_window.show();
-    }
+    version_select.exec();
+    main_window.show();
 
     return a.exec();
 }
