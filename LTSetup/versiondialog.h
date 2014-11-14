@@ -19,9 +19,10 @@ public:
 private slots:
 
     void on_pushButton_clicked();
+    void done(int);
 
 signals:
-    void version_out(QString version);
+    void clicked();
 
 private:
     Ui::VersionDialog *ui;

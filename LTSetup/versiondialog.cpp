@@ -8,7 +8,7 @@ VersionDialog::VersionDialog(QWidget *parent) :
     ui(new Ui::VersionDialog)
 {
     ui->setupUi(this);
-    QObject::connect(ui->pushButton, SIGNAL(accepted()), this, SLOT(accept()));
+    QObject::connect(ui->pushButton, SIGNAL(clicked()), this, SLOT(done(ui->combox_version->currentText())));
 }
 
 VersionDialog::~VersionDialog()
@@ -20,6 +20,7 @@ VersionDialog::~VersionDialog()
 void VersionDialog::on_pushButton_clicked()
 {
         //versionnum = ui->combox_version->currentText();
-        emit version_out(ui->combox_version->currentText());
+        //emit version_out(ui->combox_version->currentText());
+
 
 }
