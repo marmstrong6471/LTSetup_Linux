@@ -260,3 +260,4 @@ Makefile*
 .conf
 .conf.bak
 *.user
+LTSetup/LTSetup.pro.user
