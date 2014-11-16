@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
 
 
 
-    QObject::connect(&version_select, SIGNAL(version_out(QString)), &main_window, SLOT(slot_versionupdate(QString)));
+    QObject::connect(&version_select, SIGNAL(version_out(QString, int)), &main_window, SLOT(slot_versionupdate(QString, int)));
 
     version_select.exec();
     main_window.show();

@@ -17,7 +17,7 @@ public:
     ~MainWindow();
 
 public slots:
-    void slot_versionupdate(QString version);
+    void slot_versionupdate(QString version_label, int version_num);
 
 private slots:
     void on_btn_genfile_clicked();
@@ -25,6 +25,7 @@ private slots:
     void on_cb_crontab_toggled(bool checked);
 
 private:
+    //static int current_version;
     Ui::MainWindow *ui;
 };
 

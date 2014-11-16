@@ -27,9 +27,10 @@ void MainWindow::on_btn_genfile_clicked()
 
 }
 
-void MainWindow::slot_versionupdate(QString version)
+void MainWindow::slot_versionupdate(QString version_label, int version_num)
 {
-   ui->lb_version->setText(version);
+   ui->lb_version->setText(version_label);
+   //MainWindow::current_version = version_num;
    /*VersionDialog versiondialog;
    versiondialog.setModal(true);
    versiondialog.exec();*/
