@@ -4,6 +4,7 @@
 #include "filesystem.h"
 #include "versiondialog.h"
 #include "common.h"
+#include <QObject>
 
 
 MainWindow::MainWindow(QWidget *parent) :
@@ -50,4 +51,11 @@ void MainWindow::on_cb_crontab_toggled(bool checked)
         crontab_tab = ui->tabWidget->widget(1);
         ui->tabWidget->removeTab(1);
     }
+}
+
+void MainWindow::on_btn_versionsel_clicked()
+{
+    VersionDialog ver_dialog;
+    QObject::connect(&ver_dialog, SIGNAL(version_out(QString, int)), this, SLOT(slot_versionupdate(QString, int)));
+    ver_dialog.exec();
 }
