@@ -249,6 +249,7 @@ Makefile*
 *.qmlproject.user
 *.qmlproject.user.*
 *.pro.user
+*.pro
 
 
 
@@ -258,3 +259,5 @@ Makefile*
 
 .conf
 .conf.bak
+*.user
+LTSetup/LTSetup.pro.user

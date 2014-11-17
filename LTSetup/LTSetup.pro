@@ -14,9 +14,14 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    filesystem.cpp
+    common.cpp \
+    filesystem.cpp \
+    versiondialog.cpp
 
 HEADERS  += mainwindow.h \
-    filesystem.h
+    common.h \
+    filesystem.h \
+    versiondialog.h
 
-FORMS    += mainwindow.ui
+FORMS    += mainwindow.ui \
+    versiondialog.ui
