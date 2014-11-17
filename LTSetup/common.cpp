@@ -3,3 +3,4 @@
 
 QString versionnum = "14.04";
 QWidget* crontab_tab = NULL;
+QWidget* fstab_tab = NULL;
