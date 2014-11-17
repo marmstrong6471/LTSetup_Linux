@@ -24,7 +24,7 @@
    </property>
    <item>
     <property name="text">
-     <string>10.04</string>
+     <string>10.04 LTS</string>
     </property>
    </item>
    <item>
@@ -44,7 +44,7 @@
    </item>
    <item>
     <property name="text">
-     <string>12.04</string>
+     <string>12.04 LTS</string>
     </property>
    </item>
    <item>
@@ -64,7 +64,7 @@
    </item>
    <item>
     <property name="text">
-     <string>14.04</string>
+     <string>14.04 LTS</string>
     </property>
    </item>
    <item>
