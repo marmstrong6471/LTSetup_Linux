@@ -24,6 +24,8 @@ private slots:
 
     void on_cb_crontab_toggled(bool checked);
 
+    void on_btn_versionsel_clicked();
+
 private:
     //static int current_version;
     Ui::MainWindow *ui;
