@@ -20,7 +20,15 @@ void VersionDialog::on_pushButton_clicked()
         //versionnum = ui->combox_version->currentText();
         //emit version_out(ui->combox_version->currentText());
 
-        emit version_out(ui->combox_version->currentText(), ui->combox_version->currentIndex());
+        //emit version_out(ui->combox_version->currentText(), ui->combox_version->currentIndex());
+        switch(ui->combox_version->currentIndex())
+        {
+            case 0:
+                emit version_out("Ubuntu 10.04 LTS (Lucid Lynx)", 1004);
+                break;
+            case 1:
+                break;
+        }
         accept();
 
 }
