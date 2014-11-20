@@ -24,7 +24,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>2</number>
+     <number>8</number>
     </property>
     <widget class="QWidget" name="tab_general">
      <attribute name="title">
@@ -821,43 +821,76 @@
       </property>
       <layout class="QVBoxLayout" name="verticalLayout_9">
        <item>
-        <widget class="QLineEdit" name="lineEdit_30"/>
+        <widget class="QLineEdit" name="lineEdit_30">
+         <property name="PRINTER_0_DEVICE=" stdset="0">
+          <string/>
+         </property>
+        </widget>
        </item>
        <item>
         <widget class="QLineEdit" name="lineEdit_31">
          <property name="text">
           <string>9100</string>
          </property>
+         <property name="PRINTER_0_PORT=" stdset="0">
+          <number>0</number>
+         </property>
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_32"/>
+        <widget class="QLineEdit" name="lineEdit_32">
+         <property name="PRINTER_0_TYPE=" stdset="0">
+          <string/>
+         </property>
+        </widget>
        </item>
        <item>
         <widget class="QLineEdit" name="lineEdit_29">
          <property name="text">
           <string>9600</string>
          </property>
+         <property name="PRINTER_0_SPEED=" stdset="0">
+          <number>0</number>
+         </property>
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_33"/>
+        <widget class="QLineEdit" name="lineEdit_33">
+         <property name="PRINTER_0_FLOWCTRL=" stdset="0">
+          <string/>
+         </property>
+        </widget>
        </item>
        <item>
         <widget class="QLineEdit" name="lineEdit_34">
          <property name="text">
           <string>8</string>
          </property>
+         <property name="PRINTER_0_DATABITS=" stdset="0">
+          <number>0</number>
+         </property>
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_36"/>
+        <widget class="QLineEdit" name="lineEdit_36">
+         <property name="PRINTER_0_OPTIONS=" stdset="0">
+          <string/>
+         </property>
+        </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_37"/>
+        <widget class="QLineEdit" name="lineEdit_37">
+         <property name="LDM_PRINTER_LIST=" stdset="0">
+          <string/>
+         </property>
+        </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_35"/>
+        <widget class="QLineEdit" name="lineEdit_35">
+         <property name="LDM_PRINTER_DEFAULT=" stdset="0">
+          <string/>
+         </property>
+        </widget>
        </item>
       </layout>
      </widget>
@@ -876,6 +909,9 @@
          <property name="text">
           <string>Printer 0 Write Only</string>
          </property>
+         <property name="PRINTER_0_WRITE_ONLY=" stdset="0">
+          <bool>false</bool>
+         </property>
         </widget>
        </item>
        <item>
@@ -883,12 +919,18 @@
          <property name="text">
           <string>Printer 0 Parity</string>
          </property>
+         <property name="PRINTER_0_PARITY=" stdset="0">
+          <bool>false</bool>
+         </property>
         </widget>
        </item>
        <item>
         <widget class="QCheckBox" name="checkBox_12">
          <property name="text">
           <string>Scanner</string>
+         </property>
+         <property name="SCANNER=" stdset="0">
+          <bool>false</bool>
          </property>
         </widget>
        </item>
@@ -968,22 +1010,45 @@
          <property name="text">
           <string>en</string>
          </property>
+         <property name="CONSOLE_KEYMAP=" stdset="0">
+          <string/>
+         </property>
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_40"/>
+        <widget class="QLineEdit" name="lineEdit_40">
+         <property name="XKBLAYOUT=" stdset="0">
+          <string/>
+         </property>
+        </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_39"/>
+        <widget class="QLineEdit" name="lineEdit_39">
+         <property name="XKBMODEL=" stdset="0">
+          <string/>
+         </property>
+        </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_42"/>
+        <widget class="QLineEdit" name="lineEdit_42">
+         <property name="XKBVARIANT=" stdset="0">
+          <string/>
+         </property>
+        </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_41"/>
+        <widget class="QLineEdit" name="lineEdit_41">
+         <property name="XKBRULES=" stdset="0">
+          <string/>
+         </property>
+        </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_43"/>
+        <widget class="QLineEdit" name="lineEdit_43">
+         <property name="XKBOPTIONS=" stdset="0">
+          <string/>
+         </property>
+        </widget>
        </item>
       </layout>
      </widget>
@@ -1031,6 +1096,9 @@ p, li { white-space: pre-wrap; }
       </property>
       <property name="text">
        <string>Enable Touch</string>
+      </property>
+      <property name="USE_TOUCH=" stdset="0">
+       <bool>false</bool>
       </property>
      </widget>
     </widget>
@@ -1114,25 +1182,55 @@ p, li { white-space: pre-wrap; }
          <property name="text">
           <string>pulse</string>
          </property>
+         <property name="SOUND_DAEMON=" stdset="0">
+          <string/>
+         </property>
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_47"/>
+        <widget class="QLineEdit" name="lineEdit_47">
+         <property name="text">
+          <string>90</string>
+         </property>
+         <property name="VOLUME=" stdset="0">
+          <number>0</number>
+         </property>
+        </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_46"/>
+        <widget class="QLineEdit" name="lineEdit_46">
+         <property name="HEADPHONE_VOLUME=" stdset="0">
+          <number>0</number>
+         </property>
+        </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_48"/>
+        <widget class="QLineEdit" name="lineEdit_48">
+         <property name="PCM_VOLUME=" stdset="0">
+          <number>0</number>
+         </property>
+        </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_50"/>
+        <widget class="QLineEdit" name="lineEdit_50">
+         <property name="CD_VOLUME=" stdset="0">
+          <number>0</number>
+         </property>
+        </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_49"/>
+        <widget class="QLineEdit" name="lineEdit_49">
+         <property name="FRONT_VOLUME=" stdset="0">
+          <number>0</number>
+         </property>
+        </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_44"/>
+        <widget class="QLineEdit" name="lineEdit_44">
+         <property name="MIC_VOLUME=" stdset="0">
+          <number>0</number>
+         </property>
+        </widget>
        </item>
       </layout>
      </widget>
@@ -1147,6 +1245,9 @@ p, li { white-space: pre-wrap; }
       </property>
       <property name="text">
        <string>Enable Sound</string>
+      </property>
+      <property name="SOUND=" stdset="0">
+       <bool>false</bool>
       </property>
      </widget>
     </widget>
@@ -1169,12 +1270,18 @@ p, li { white-space: pre-wrap; }
          <property name="text">
           <string>Use XFS</string>
          </property>
+         <property name="USE_XFS=" stdset="0">
+          <bool>false</bool>
+         </property>
         </widget>
        </item>
        <item>
         <widget class="QCheckBox" name="checkBox_31">
          <property name="text">
           <string>X Mouse Emulate 3BTN</string>
+         </property>
+         <property name="X_MOUSE_EMULATE3BTN=" stdset="0">
+          <bool>false</bool>
          </property>
         </widget>
        </item>
@@ -1183,12 +1290,18 @@ p, li { white-space: pre-wrap; }
          <property name="text">
           <string>X Numlock</string>
          </property>
+         <property name="X_NUMLOCK=" stdset="0">
+          <bool>false</bool>
+         </property>
         </widget>
        </item>
        <item>
         <widget class="QCheckBox" name="checkBox_33">
          <property name="text">
           <string>Configure X</string>
+         </property>
+         <property name="CONFIGURE_X=" stdset="0">
+          <bool>false</bool>
          </property>
         </widget>
        </item>
@@ -1238,17 +1351,28 @@ p, li { white-space: pre-wrap; }
       </property>
       <layout class="QVBoxLayout" name="verticalLayout_2">
        <item>
-        <widget class="QLineEdit" name="lineEdit_2"/>
+        <widget class="QLineEdit" name="lineEdit_2">
+         <property name="X_CONF=" stdset="0">
+          <string/>
+         </property>
+        </widget>
        </item>
        <item>
         <widget class="QLineEdit" name="lineEdit_3">
          <property name="text">
           <string>100</string>
          </property>
+         <property name="X_RAMPERC=" stdset="0">
+          <number>0</number>
+         </property>
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit"/>
+        <widget class="QLineEdit" name="lineEdit">
+         <property name="X_VIRTUAL=" stdset="0">
+          <string/>
+         </property>
+        </widget>
        </item>
       </layout>
      </widget>
@@ -1310,19 +1434,39 @@ p, li { white-space: pre-wrap; }
       </property>
       <layout class="QVBoxLayout" name="verticalLayout_4">
        <item>
-        <widget class="QLineEdit" name="lineEdit_4"/>
+        <widget class="QLineEdit" name="lineEdit_4">
+         <property name="XFS_SERVER=" stdset="0">
+          <string/>
+         </property>
+        </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_5"/>
+        <widget class="QLineEdit" name="lineEdit_5">
+         <property name="XDM_SERVER=" stdset="0">
+          <string/>
+         </property>
+        </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_6"/>
+        <widget class="QLineEdit" name="lineEdit_6">
+         <property name="XSERVER=" stdset="0">
+          <string/>
+         </property>
+        </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_7"/>
+        <widget class="QLineEdit" name="lineEdit_7">
+         <property name="X_MOUSE_DEVICE=" stdset="0">
+          <string/>
+         </property>
+        </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_8"/>
+        <widget class="QLineEdit" name="lineEdit_8">
+         <property name="X_MOUSE_PROTOCOL=" stdset="0">
+          <string/>
+         </property>
+        </widget>
        </item>
       </layout>
      </widget>
@@ -1435,6 +1579,9 @@ p, li { white-space: pre-wrap; }
       <layout class="QVBoxLayout" name="verticalLayout_6">
        <item>
         <widget class="QComboBox" name="comboBox_2">
+         <property name="SCREEN_01=" stdset="0">
+          <string/>
+         </property>
          <item>
           <property name="text">
            <string>ldm</string>
@@ -1464,6 +1611,9 @@ p, li { white-space: pre-wrap; }
        </item>
        <item>
         <widget class="QComboBox" name="comboBox">
+         <property name="SCREEN_02=" stdset="0">
+          <string/>
+         </property>
          <item>
           <property name="text">
            <string>ldm</string>
@@ -1493,6 +1643,9 @@ p, li { white-space: pre-wrap; }
        </item>
        <item>
         <widget class="QComboBox" name="comboBox_3">
+         <property name="SCREEN_03=" stdset="0">
+          <string/>
+         </property>
          <item>
           <property name="text">
            <string>ldm</string>
@@ -1522,6 +1675,9 @@ p, li { white-space: pre-wrap; }
        </item>
        <item>
         <widget class="QComboBox" name="comboBox_4">
+         <property name="SCREEN_04=" stdset="0">
+          <string/>
+         </property>
          <item>
           <property name="text">
            <string>ldm</string>
@@ -1551,6 +1707,9 @@ p, li { white-space: pre-wrap; }
        </item>
        <item>
         <widget class="QComboBox" name="comboBox_5">
+         <property name="SCREEN_05=" stdset="0">
+          <string/>
+         </property>
          <item>
           <property name="text">
            <string>ldm</string>
@@ -1580,6 +1739,9 @@ p, li { white-space: pre-wrap; }
        </item>
        <item>
         <widget class="QComboBox" name="comboBox_7">
+         <property name="SCREEN_06=" stdset="0">
+          <string/>
+         </property>
          <item>
           <property name="text">
            <string>ldm</string>
@@ -1609,6 +1771,9 @@ p, li { white-space: pre-wrap; }
        </item>
        <item>
         <widget class="QComboBox" name="comboBox_6">
+         <property name="SCREEN_07=" stdset="0">
+          <string/>
+         </property>
          <item>
           <property name="text">
            <string>ldm</string>
@@ -1638,6 +1803,9 @@ p, li { white-space: pre-wrap; }
        </item>
        <item>
         <widget class="QComboBox" name="comboBox_8">
+         <property name="SCREEN_08=" stdset="0">
+          <string/>
+         </property>
          <item>
           <property name="text">
            <string>ldm</string>
@@ -1726,6 +1894,9 @@ p, li { white-space: pre-wrap; }
       <layout class="QVBoxLayout" name="verticalLayout_15">
        <item>
         <widget class="QComboBox" name="comboBox_9">
+         <property name="SCREEN_09=" stdset="0">
+          <string/>
+         </property>
          <item>
           <property name="text">
            <string>ldm</string>
@@ -1755,6 +1926,9 @@ p, li { white-space: pre-wrap; }
        </item>
        <item>
         <widget class="QComboBox" name="comboBox_10">
+         <property name="SCREEN_10=" stdset="0">
+          <string/>
+         </property>
          <item>
           <property name="text">
            <string>ldm</string>
@@ -1784,6 +1958,9 @@ p, li { white-space: pre-wrap; }
        </item>
        <item>
         <widget class="QComboBox" name="comboBox_12">
+         <property name="SCREEN_11=" stdset="0">
+          <string/>
+         </property>
          <item>
           <property name="text">
            <string>ldm</string>
@@ -1813,6 +1990,9 @@ p, li { white-space: pre-wrap; }
        </item>
        <item>
         <widget class="QComboBox" name="comboBox_11">
+         <property name="SCREEN_12=" stdset="0">
+          <string/>
+         </property>
          <item>
           <property name="text">
            <string>ldm</string>
@@ -1851,6 +2031,9 @@ p, li { white-space: pre-wrap; }
         <height>20</height>
        </rect>
       </property>
+      <property name="TELNET_HOST=" stdset="0">
+       <string/>
+      </property>
      </widget>
     </widget>
     <widget class="QWidget" name="tab_10">
@@ -1874,6 +2057,9 @@ p, li { white-space: pre-wrap; }
       <property name="text">
        <string>Local Apps</string>
       </property>
+      <property name="LOCAL_APPS=" stdset="0">
+       <bool>false</bool>
+      </property>
      </widget>
      <widget class="QCheckBox" name="checkBox_3">
       <property name="geometry">
@@ -1886,6 +2072,9 @@ p, li { white-space: pre-wrap; }
       </property>
       <property name="text">
        <string>Local Apps Menu</string>
+      </property>
+      <property name="LOCAL_APPS_MENU=" stdset="0">
+       <bool>false</bool>
       </property>
      </widget>
      <widget class="QLabel" name="label_64">
@@ -1910,6 +2099,9 @@ p, li { white-space: pre-wrap; }
         <height>151</height>
        </rect>
       </property>
+      <property name="LOCAL_APPS_MENU_ITEMS=" stdset="0">
+       <string/>
+      </property>
      </widget>
      <widget class="QLabel" name="label_65">
       <property name="geometry">
@@ -1932,6 +2124,9 @@ p, li { white-space: pre-wrap; }
         <width>291</width>
         <height>151</height>
        </rect>
+      </property>
+      <property name="LOCAL_APPS_WHITELIST=" stdset="0">
+       <string/>
       </property>
      </widget>
     </widget>
