@@ -24,7 +24,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>8</number>
     </property>
     <widget class="QWidget" name="tab_general">
      <attribute name="title">
@@ -45,12 +45,18 @@
          <property name="text">
           <string>Configure FSTAB</string>
          </property>
+         <property name="CONFIGURE_FSTAB=" stdset="0">
+          <string/>
+         </property>
         </widget>
        </item>
        <item>
         <widget class="QCheckBox" name="cb_localapp">
          <property name="text">
           <string>Local Apps</string>
+         </property>
+         <property name="LOCAL_APPS=" stdset="0">
+          <string/>
          </property>
         </widget>
        </item>
@@ -59,12 +65,18 @@
          <property name="text">
           <string>LocalDev</string>
          </property>
+         <property name="LOCALDEV=" stdset="0">
+          <string/>
+         </property>
         </widget>
        </item>
        <item>
         <widget class="QCheckBox" name="cb_ldevdenycd">
          <property name="text">
           <string>LocalDev Deny CD</string>
+         </property>
+         <property name="LOCALDEV_DENY_CD=" stdset="0">
+          <string/>
          </property>
         </widget>
        </item>
@@ -73,12 +85,18 @@
          <property name="text">
           <string>LocalDev Deny Floppy</string>
          </property>
+         <property name="LOCALDEV_DENY_FLOPPY=" stdset="0">
+          <string/>
+         </property>
         </widget>
        </item>
        <item>
         <widget class="QCheckBox" name="cb_ldevdenyinternal">
          <property name="text">
           <string>LocalDev Deny Internal Disks</string>
+         </property>
+         <property name="LOCALDEV_DENY_INTERNAL_DISKS=" stdset="0">
+          <string/>
          </property>
         </widget>
        </item>
@@ -87,6 +105,9 @@
          <property name="text">
           <string>LocalDev Deny USB</string>
          </property>
+         <property name="LOCALDEV_DENY_USB=" stdset="0">
+          <string/>
+         </property>
         </widget>
        </item>
        <item>
@@ -94,12 +115,18 @@
          <property name="text">
           <string>NBD Swap</string>
          </property>
+         <property name="NBD_SWAP=" stdset="0">
+          <string/>
+         </property>
         </widget>
        </item>
        <item>
         <widget class="QCheckBox" name="cb_localswap">
          <property name="text">
           <string>Use Local Swap</string>
+         </property>
+         <property name="USE_LOCAL_SWAP=" stdset="0">
+          <string/>
          </property>
         </widget>
        </item>
@@ -194,28 +221,60 @@
       </property>
       <layout class="QVBoxLayout" name="vl_general_03">
        <item>
-        <widget class="QLineEdit" name="txt_dnsserver"/>
+        <widget class="QLineEdit" name="txt_dnsserver">
+         <property name="DNS_SERVER=" stdset="0">
+          <string/>
+         </property>
+        </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="txt_searchdomain"/>
+        <widget class="QLineEdit" name="txt_searchdomain">
+         <property name="SEARCH_DOMAIN=" stdset="0">
+          <string/>
+         </property>
+        </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="txt_localappextra"/>
+        <widget class="QLineEdit" name="txt_localappextra">
+         <property name="LOCAL_APPS_EXTRAMOUNTS=" stdset="0">
+          <string/>
+         </property>
+        </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="txt_ldevdeny"/>
+        <widget class="QLineEdit" name="txt_ldevdeny">
+         <property name="LOCALDEV_DENY=" stdset="0">
+          <string/>
+         </property>
+        </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="txt_nbdswapport"/>
+        <widget class="QLineEdit" name="txt_nbdswapport">
+         <property name="NBD_SWAP_PORT=" stdset="0">
+          <string/>
+         </property>
+        </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="txt_nbdswapserver"/>
+        <widget class="QLineEdit" name="txt_nbdswapserver">
+         <property name="NBD_SWAP_SERVER=" stdset="0">
+          <string/>
+         </property>
+        </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="txt_server"/>
+        <widget class="QLineEdit" name="txt_server">
+         <property name="SERVER=" stdset="0">
+          <string/>
+         </property>
+        </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="txt_sysloghost"/>
+        <widget class="QLineEdit" name="txt_sysloghost">
+         <property name="SYSLOG_HOST=" stdset="0">
+          <string/>
+         </property>
+        </widget>
        </item>
       </layout>
      </widget>
@@ -446,34 +505,74 @@
       </property>
       <layout class="QVBoxLayout" name="vl_scripts_02">
        <item>
-        <widget class="QLineEdit" name="lineEdit_10"/>
+        <widget class="QLineEdit" name="lineEdit_10">
+         <property name="RCFILE_01=" stdset="0">
+          <string/>
+         </property>
+        </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_9"/>
+        <widget class="QLineEdit" name="lineEdit_9">
+         <property name="RCFILE_02=" stdset="0">
+          <string/>
+         </property>
+        </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_11"/>
+        <widget class="QLineEdit" name="lineEdit_11">
+         <property name="RCFILE_03=" stdset="0">
+          <string/>
+         </property>
+        </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_12"/>
+        <widget class="QLineEdit" name="lineEdit_12">
+         <property name="RCFILE_04=" stdset="0">
+          <string/>
+         </property>
+        </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_13"/>
+        <widget class="QLineEdit" name="lineEdit_13">
+         <property name="RCFILE_05=" stdset="0">
+          <string/>
+         </property>
+        </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_15"/>
+        <widget class="QLineEdit" name="lineEdit_15">
+         <property name="RCFILE_06=" stdset="0">
+          <string/>
+         </property>
+        </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_16"/>
+        <widget class="QLineEdit" name="lineEdit_16">
+         <property name="RCFILE_07=" stdset="0">
+          <string/>
+         </property>
+        </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_18"/>
+        <widget class="QLineEdit" name="lineEdit_18">
+         <property name="RCFILE_08=" stdset="0">
+          <string/>
+         </property>
+        </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_17"/>
+        <widget class="QLineEdit" name="lineEdit_17">
+         <property name="RCFILE_09=" stdset="0">
+          <string/>
+         </property>
+        </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_14"/>
+        <widget class="QLineEdit" name="lineEdit_14">
+         <property name="RCFILE_10=" stdset="0">
+          <string/>
+         </property>
+        </widget>
        </item>
       </layout>
      </widget>
@@ -570,34 +669,74 @@
       </property>
       <layout class="QVBoxLayout" name="vl_scripts_04">
        <item>
-        <widget class="QLineEdit" name="lineEdit_19"/>
+        <widget class="QLineEdit" name="lineEdit_19">
+         <property name="MODULE_01=" stdset="0">
+          <string/>
+         </property>
+        </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_20"/>
+        <widget class="QLineEdit" name="lineEdit_20">
+         <property name="MODULE_02=" stdset="0">
+          <string/>
+         </property>
+        </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_21"/>
+        <widget class="QLineEdit" name="lineEdit_21">
+         <property name="MODULE_03=" stdset="0">
+          <string/>
+         </property>
+        </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_22"/>
+        <widget class="QLineEdit" name="lineEdit_22">
+         <property name="MODULE_04=" stdset="0">
+          <string/>
+         </property>
+        </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_24"/>
+        <widget class="QLineEdit" name="lineEdit_24">
+         <property name="MODULE_05=" stdset="0">
+          <string/>
+         </property>
+        </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_25"/>
+        <widget class="QLineEdit" name="lineEdit_25">
+         <property name="MODULE_06=" stdset="0">
+          <string/>
+         </property>
+        </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_27"/>
+        <widget class="QLineEdit" name="lineEdit_27">
+         <property name="MODULE_07=" stdset="0">
+          <string/>
+         </property>
+        </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_26"/>
+        <widget class="QLineEdit" name="lineEdit_26">
+         <property name="MODULE_08=" stdset="0">
+          <string/>
+         </property>
+        </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_28"/>
+        <widget class="QLineEdit" name="lineEdit_28">
+         <property name="MODULE_09=" stdset="0">
+          <string/>
+         </property>
+        </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_23"/>
+        <widget class="QLineEdit" name="lineEdit_23">
+         <property name="MODULE_10=" stdset="0">
+          <string/>
+         </property>
+        </widget>
        </item>
       </layout>
      </widget>
@@ -692,43 +831,76 @@
       </property>
       <layout class="QVBoxLayout" name="verticalLayout_9">
        <item>
-        <widget class="QLineEdit" name="lineEdit_30"/>
+        <widget class="QLineEdit" name="lineEdit_30">
+         <property name="PRINTER_0_DEVICE=" stdset="0">
+          <string/>
+         </property>
+        </widget>
        </item>
        <item>
         <widget class="QLineEdit" name="lineEdit_31">
          <property name="text">
           <string>9100</string>
          </property>
+         <property name="PRINTER_0_PORT=" stdset="0">
+          <number>0</number>
+         </property>
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_32"/>
+        <widget class="QLineEdit" name="lineEdit_32">
+         <property name="PRINTER_0_TYPE=" stdset="0">
+          <string/>
+         </property>
+        </widget>
        </item>
        <item>
         <widget class="QLineEdit" name="lineEdit_29">
          <property name="text">
           <string>9600</string>
          </property>
+         <property name="PRINTER_0_SPEED=" stdset="0">
+          <number>0</number>
+         </property>
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_33"/>
+        <widget class="QLineEdit" name="lineEdit_33">
+         <property name="PRINTER_0_FLOWCTRL=" stdset="0">
+          <string/>
+         </property>
+        </widget>
        </item>
        <item>
         <widget class="QLineEdit" name="lineEdit_34">
          <property name="text">
           <string>8</string>
          </property>
+         <property name="PRINTER_0_DATABITS=" stdset="0">
+          <number>0</number>
+         </property>
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_36"/>
+        <widget class="QLineEdit" name="lineEdit_36">
+         <property name="PRINTER_0_OPTIONS=" stdset="0">
+          <string/>
+         </property>
+        </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_37"/>
+        <widget class="QLineEdit" name="lineEdit_37">
+         <property name="LDM_PRINTER_LIST=" stdset="0">
+          <string/>
+         </property>
+        </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_35"/>
+        <widget class="QLineEdit" name="lineEdit_35">
+         <property name="LDM_PRINTER_DEFAULT=" stdset="0">
+          <string/>
+         </property>
+        </widget>
        </item>
       </layout>
      </widget>
@@ -747,6 +919,9 @@
          <property name="text">
           <string>Printer 0 Write Only</string>
          </property>
+         <property name="PRINTER_0_WRITE_ONLY=" stdset="0">
+          <bool>false</bool>
+         </property>
         </widget>
        </item>
        <item>
@@ -754,12 +929,18 @@
          <property name="text">
           <string>Printer 0 Parity</string>
          </property>
+         <property name="PRINTER_0_PARITY=" stdset="0">
+          <bool>false</bool>
+         </property>
         </widget>
        </item>
        <item>
         <widget class="QCheckBox" name="checkBox_12">
          <property name="text">
           <string>Scanner</string>
+         </property>
+         <property name="SCANNER=" stdset="0">
+          <bool>false</bool>
          </property>
         </widget>
        </item>
@@ -839,22 +1020,45 @@
          <property name="text">
           <string>en</string>
          </property>
+         <property name="CONSOLE_KEYMAP=" stdset="0">
+          <string/>
+         </property>
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_40"/>
+        <widget class="QLineEdit" name="lineEdit_40">
+         <property name="XKBLAYOUT=" stdset="0">
+          <string/>
+         </property>
+        </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_39"/>
+        <widget class="QLineEdit" name="lineEdit_39">
+         <property name="XKBMODEL=" stdset="0">
+          <string/>
+         </property>
+        </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_42"/>
+        <widget class="QLineEdit" name="lineEdit_42">
+         <property name="XKBVARIANT=" stdset="0">
+          <string/>
+         </property>
+        </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_41"/>
+        <widget class="QLineEdit" name="lineEdit_41">
+         <property name="XKBRULES=" stdset="0">
+          <string/>
+         </property>
+        </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_43"/>
+        <widget class="QLineEdit" name="lineEdit_43">
+         <property name="XKBOPTIONS=" stdset="0">
+          <string/>
+         </property>
+        </widget>
        </item>
       </layout>
      </widget>
@@ -863,17 +1067,48 @@
      <attribute name="title">
       <string>Touchscreen</string>
      </attribute>
-     <widget class="QCheckBox" name="checkBox_29">
+     <widget class="QTextEdit" name="textEdit">
       <property name="geometry">
        <rect>
-        <x>20</x>
-        <y>0</y>
-        <width>161</width>
-        <height>61</height>
+        <x>300</x>
+        <y>10</y>
+        <width>341</width>
+        <height>241</height>
+       </rect>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt;&quot;&gt; X_TOUCH_DEVICE     Path to device   /dev/ttyS0    set device for&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt;&quot;&gt;                                                             touchscreen&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt;&quot;&gt;           X_TOUCH_DRIVER     Touchscreen      elographics   set driver for&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt;&quot;&gt;                              driver                         touchscreen&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt;&quot;&gt;           X_TOUCH_MAXX       integer          3588          Xmax&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt;&quot;&gt;           X_TOUCH_MAXY       integer          3526          Ymax&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt;&quot;&gt;           X_TOUCH_MINX       integer          433           Xmin&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Courier New,courier'; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt;&quot;&gt;           X_TOUCH_MINY       integer          569           Ymin&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt;&quot;&gt;           X_TOUCH_UNDELAY    integer          10            Untouch delay&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt;&quot;&gt;           X_TOUCH_RTPDELAY   integer          10            Repeat touch&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt;&quot;&gt;                                                             delay&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBox">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>111</width>
+        <height>17</height>
        </rect>
       </property>
       <property name="text">
-       <string>Enable Touchscreen</string>
+       <string>Enable Touch</string>
+      </property>
+      <property name="USE_TOUCH=" stdset="0">
+       <bool>false</bool>
       </property>
      </widget>
     </widget>
@@ -957,25 +1192,55 @@
          <property name="text">
           <string>pulse</string>
          </property>
+         <property name="SOUND_DAEMON=" stdset="0">
+          <string/>
+         </property>
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_47"/>
+        <widget class="QLineEdit" name="lineEdit_47">
+         <property name="text">
+          <string>90</string>
+         </property>
+         <property name="VOLUME=" stdset="0">
+          <number>0</number>
+         </property>
+        </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_46"/>
+        <widget class="QLineEdit" name="lineEdit_46">
+         <property name="HEADPHONE_VOLUME=" stdset="0">
+          <number>0</number>
+         </property>
+        </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_48"/>
+        <widget class="QLineEdit" name="lineEdit_48">
+         <property name="PCM_VOLUME=" stdset="0">
+          <number>0</number>
+         </property>
+        </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_50"/>
+        <widget class="QLineEdit" name="lineEdit_50">
+         <property name="CD_VOLUME=" stdset="0">
+          <number>0</number>
+         </property>
+        </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_49"/>
+        <widget class="QLineEdit" name="lineEdit_49">
+         <property name="FRONT_VOLUME=" stdset="0">
+          <number>0</number>
+         </property>
+        </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_44"/>
+        <widget class="QLineEdit" name="lineEdit_44">
+         <property name="MIC_VOLUME=" stdset="0">
+          <number>0</number>
+         </property>
+        </widget>
        </item>
       </layout>
      </widget>
@@ -990,6 +1255,9 @@
       </property>
       <property name="text">
        <string>Enable Sound</string>
+      </property>
+      <property name="SOUND=" stdset="0">
+       <bool>false</bool>
       </property>
      </widget>
     </widget>
@@ -1010,28 +1278,203 @@
        <item>
         <widget class="QCheckBox" name="checkBox_30">
          <property name="text">
-          <string>CheckBox</string>
+          <string>Use XFS</string>
+         </property>
+         <property name="USE_XFS=" stdset="0">
+          <bool>false</bool>
          </property>
         </widget>
        </item>
        <item>
         <widget class="QCheckBox" name="checkBox_31">
          <property name="text">
-          <string>CheckBox</string>
+          <string>X Mouse Emulate 3BTN</string>
+         </property>
+         <property name="X_MOUSE_EMULATE3BTN=" stdset="0">
+          <bool>false</bool>
          </property>
         </widget>
        </item>
        <item>
         <widget class="QCheckBox" name="checkBox_32">
          <property name="text">
-          <string>CheckBox</string>
+          <string>X Numlock</string>
+         </property>
+         <property name="X_NUMLOCK=" stdset="0">
+          <bool>false</bool>
          </property>
         </widget>
        </item>
        <item>
         <widget class="QCheckBox" name="checkBox_33">
          <property name="text">
-          <string>CheckBox</string>
+          <string>Configure X</string>
+         </property>
+         <property name="CONFIGURE_X=" stdset="0">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_15">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>140</y>
+        <width>91</width>
+        <height>121</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QLabel" name="label_3">
+         <property name="text">
+          <string>X Config</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_5">
+         <property name="text">
+          <string>X Ram Percent</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_4">
+         <property name="text">
+          <string>X Virtual</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_17">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>140</y>
+        <width>221</width>
+        <height>121</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QLineEdit" name="lineEdit_2">
+         <property name="X_CONF=" stdset="0">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEdit_3">
+         <property name="text">
+          <string>100</string>
+         </property>
+         <property name="X_RAMPERC=" stdset="0">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEdit">
+         <property name="X_VIRTUAL=" stdset="0">
+          <string/>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_18">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>0</y>
+        <width>121</width>
+        <height>141</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <widget class="QLabel" name="label_6">
+         <property name="text">
+          <string>XFS Server</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_8">
+         <property name="text">
+          <string>XDM Server</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_9">
+         <property name="text">
+          <string>X Server</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_7">
+         <property name="text">
+          <string>X Mouse Device</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_10">
+         <property name="text">
+          <string>X Moust Protocol</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_19">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>0</y>
+        <width>311</width>
+        <height>141</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <item>
+        <widget class="QLineEdit" name="lineEdit_4">
+         <property name="XFS_SERVER=" stdset="0">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEdit_5">
+         <property name="XDM_SERVER=" stdset="0">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEdit_6">
+         <property name="XSERVER=" stdset="0">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEdit_7">
+         <property name="X_MOUSE_DEVICE=" stdset="0">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEdit_8">
+         <property name="X_MOUSE_PROTOCOL=" stdset="0">
+          <string/>
          </property>
         </widget>
        </item>
@@ -1066,6 +1509,542 @@
      <attribute name="title">
       <string>Screen</string>
      </attribute>
+     <widget class="QWidget" name="verticalLayoutWidget_20">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>141</width>
+        <height>261</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_5">
+       <item>
+        <widget class="QLabel" name="label_49">
+         <property name="text">
+          <string>Screen 01</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_52">
+         <property name="text">
+          <string>Screen 02</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_54">
+         <property name="text">
+          <string>Screen 03</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_55">
+         <property name="text">
+          <string>Screen 04</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_56">
+         <property name="text">
+          <string>Screen 05</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_57">
+         <property name="text">
+          <string>Screen 06</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_58">
+         <property name="text">
+          <string>Screen 07</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_53">
+         <property name="text">
+          <string>Screen 08</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_21">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>0</y>
+        <width>91</width>
+        <height>261</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_6">
+       <item>
+        <widget class="QComboBox" name="comboBox_2">
+         <property name="SCREEN_01=" stdset="0">
+          <string/>
+         </property>
+         <item>
+          <property name="text">
+           <string>ldm</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>rdesktop</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>xdmcp</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>shell</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>telnet</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBox">
+         <property name="SCREEN_02=" stdset="0">
+          <string/>
+         </property>
+         <item>
+          <property name="text">
+           <string>ldm</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>rdesktop</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>xdmcp</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>shell</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>telnet</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBox_3">
+         <property name="SCREEN_03=" stdset="0">
+          <string/>
+         </property>
+         <item>
+          <property name="text">
+           <string>ldm</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>rdesktop</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>xdmcp</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>shell</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>telnet</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBox_4">
+         <property name="SCREEN_04=" stdset="0">
+          <string/>
+         </property>
+         <item>
+          <property name="text">
+           <string>ldm</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>rdesktop</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>xdmcp</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>shell</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>telnet</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBox_5">
+         <property name="SCREEN_05=" stdset="0">
+          <string/>
+         </property>
+         <item>
+          <property name="text">
+           <string>ldm</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>rdesktop</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>xdmcp</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>shell</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>telnet</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBox_7">
+         <property name="SCREEN_06=" stdset="0">
+          <string/>
+         </property>
+         <item>
+          <property name="text">
+           <string>ldm</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>rdesktop</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>xdmcp</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>shell</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>telnet</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBox_6">
+         <property name="SCREEN_07=" stdset="0">
+          <string/>
+         </property>
+         <item>
+          <property name="text">
+           <string>ldm</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>rdesktop</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>xdmcp</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>shell</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>telnet</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBox_8">
+         <property name="SCREEN_08=" stdset="0">
+          <string/>
+         </property>
+         <item>
+          <property name="text">
+           <string>ldm</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>rdesktop</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>xdmcp</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>shell</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>telnet</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_22">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>0</y>
+        <width>101</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_7">
+       <item>
+        <widget class="QLabel" name="label_60">
+         <property name="text">
+          <string>Screen 09</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_59">
+         <property name="text">
+          <string>Screen 10</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_61">
+         <property name="text">
+          <string>Screen 11</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_62">
+         <property name="text">
+          <string>Screen 12</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_63">
+         <property name="text">
+          <string>Telnet Host</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_23">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>0</y>
+        <width>91</width>
+        <height>131</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_15">
+       <item>
+        <widget class="QComboBox" name="comboBox_9">
+         <property name="SCREEN_09=" stdset="0">
+          <string/>
+         </property>
+         <item>
+          <property name="text">
+           <string>ldm</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>rdesktop</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>xdmcp</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>shell</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>telnet</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBox_10">
+         <property name="SCREEN_10=" stdset="0">
+          <string/>
+         </property>
+         <item>
+          <property name="text">
+           <string>ldm</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>rdesktop</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>xdmcp</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>shell</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>telnet</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBox_12">
+         <property name="SCREEN_11=" stdset="0">
+          <string/>
+         </property>
+         <item>
+          <property name="text">
+           <string>ldm</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>rdesktop</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>xdmcp</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>shell</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>telnet</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBox_11">
+         <property name="SCREEN_12=" stdset="0">
+          <string/>
+         </property>
+         <item>
+          <property name="text">
+           <string>ldm</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>rdesktop</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>xdmcp</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>shell</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>telnet</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_51">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>140</y>
+        <width>221</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="TELNET_HOST=" stdset="0">
+       <string/>
+      </property>
+     </widget>
     </widget>
     <widget class="QWidget" name="tab_10">
      <attribute name="title">
@@ -1076,6 +2055,90 @@
      <attribute name="title">
       <string>Local Applications</string>
      </attribute>
+     <widget class="QCheckBox" name="checkBox_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>70</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Local Apps</string>
+      </property>
+      <property name="LOCAL_APPS=" stdset="0">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBox_3">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>50</y>
+        <width>111</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Local Apps Menu</string>
+      </property>
+      <property name="LOCAL_APPS_MENU=" stdset="0">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_64">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>90</y>
+        <width>131</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Local Apps Menu Items</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="textEdit_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>110</y>
+        <width>291</width>
+        <height>151</height>
+       </rect>
+      </property>
+      <property name="LOCAL_APPS_MENU_ITEMS=" stdset="0">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_65">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>90</y>
+        <width>131</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Local Apps Whitelist</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="textEdit_3">
+      <property name="geometry">
+       <rect>
+        <x>353</x>
+        <y>110</y>
+        <width>291</width>
+        <height>151</height>
+       </rect>
+      </property>
+      <property name="LOCAL_APPS_WHITELIST=" stdset="0">
+       <string/>
+      </property>
+     </widget>
     </widget>
    </widget>
    <widget class="QPushButton" name="btn_genfile">
