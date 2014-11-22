@@ -12,6 +12,8 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    crontab_tab = ui->tabWidget->widget(1);
+    ui->tabWidget->removeTab(1);
 }
 
 MainWindow::~MainWindow()
@@ -59,6 +61,7 @@ void MainWindow::on_cb_crontab_toggled(bool checked)
     {
         QString tabname = "Crontab Lines";
         ui->tabWidget->insertTab(1, crontab_tab, tabname);
+        crontab_tab = NULL;
 
     }
     else if (!checked)
