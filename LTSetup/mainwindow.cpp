@@ -26,7 +26,9 @@ void MainWindow::on_btn_genfile_clicked()
     FileSystem fsys;
     QString test_data = "Test test test";
 
-    fsys.write_file(test_data);
+    QString prop_test = "DNS_Server=" + ui->txt_dnsserver->text();
+
+    fsys.write_file(prop_test);
 
 }
 

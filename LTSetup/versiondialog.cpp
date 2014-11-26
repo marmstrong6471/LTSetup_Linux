@@ -60,3 +60,8 @@ void VersionDialog::on_pushButton_clicked()
         accept();
 
 }
+
+void VersionDialog::on_VersionDialog_rejected()
+{
+    emit version_out("ERROR - Invalid value, select version again", 0000);
+}

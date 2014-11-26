@@ -20,6 +20,8 @@ private slots:
 
     void on_pushButton_clicked();
 
+    void on_VersionDialog_rejected();
+
 signals:
     void version_out(QString version_label, int version_num);
 
