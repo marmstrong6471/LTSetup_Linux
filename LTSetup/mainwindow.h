@@ -29,6 +29,8 @@ private slots:
 private:
     //static int current_version;
     Ui::MainWindow *ui;
+
+    QString config_compile();
 };
 
 #endif // MAINWINDOW_H

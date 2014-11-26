@@ -21,14 +21,30 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
+inline const char * const bool_to_string(bool b)
+{
+    return b ? "True" : "False";
+}
+
+QString MainWindow::config_compile()
+{
+    QString config = "";
+
+    config  = "CONFIGURE_FSTAB=";
+
+    config += bool_to_string(ui->cb_fstab->isChecked());
+
+    return config;
+}
+
 void MainWindow::on_btn_genfile_clicked()
 {
     FileSystem fsys;
-    QString test_data = "Test test test";
+    //QString test_data = "Test test test";
 
-    QString prop_test = "DNS_Server=" + ui->txt_dnsserver->text();
+    QString config_string = config_compile();
 
-    fsys.write_file(prop_test);
+    fsys.write_file(config_string);
 
 }
 
