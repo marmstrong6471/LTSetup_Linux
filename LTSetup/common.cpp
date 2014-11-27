@@ -1,6 +1,6 @@
 #include <QString>
 #include "common.h"
 
-QString versionnum = "14.04";
+int ver_persistent = NULL;
 QWidget* crontab_tab = NULL;
 QWidget* fstab_tab = NULL;

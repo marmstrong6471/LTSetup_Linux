@@ -21,7 +21,7 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-inline const char * const bool_to_string(bool b)
+inline QString bool_to_string(bool b)
 {
     return b ? "True" : "False";
 }
@@ -32,7 +32,21 @@ QString MainWindow::config_compile()
 
     config  = "CONFIGURE_FSTAB=";
 
-    config += bool_to_string(ui->cb_fstab->isChecked());
+    config += bool_to_string(ui->cb_fstab->isChecked()) + "\n";
+
+    if (ver_persistent >= 1404)
+    {
+        QLineEdit* crontabs[] = {ui->txt_crontab_0, ui->txt_crontab_1, ui->txt_crontab_2, ui->txt_crontab_3, ui->txt_crontab_4, ui->txt_crontab_5, ui->txt_crontab_6, ui->txt_crontab_7, ui->txt_crontab_8, ui->txt_crontab_9};
+
+        for(int i = 0; i < 10; i++)
+        {
+            if(crontabs[i]->text() != "")
+            {
+                config += "CRONTAB_" + QString::number(i);
+                config += "=" + crontabs[i]->text() + "\n";
+            }
+        }
+    }
 
     return config;
 }
@@ -51,6 +65,7 @@ void MainWindow::on_btn_genfile_clicked()
 void MainWindow::slot_versionupdate(QString version_label, int version_num)
 {
    ui->lb_version->setText(version_label);
+   ver_persistent = version_num;
 
    if(version_num <= 1404)
    {

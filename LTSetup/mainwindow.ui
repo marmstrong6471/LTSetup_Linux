@@ -294,34 +294,34 @@
       </property>
       <layout class="QVBoxLayout" name="vl_crontab_01">
        <item>
-        <widget class="QLineEdit" name="txt_crontab_01"/>
+        <widget class="QLineEdit" name="txt_crontab_0"/>
        </item>
        <item>
-        <widget class="QLineEdit" name="txt_crontab_02"/>
+        <widget class="QLineEdit" name="txt_crontab_1"/>
        </item>
        <item>
-        <widget class="QLineEdit" name="txt_crontab_03"/>
+        <widget class="QLineEdit" name="txt_crontab_2"/>
        </item>
        <item>
-        <widget class="QLineEdit" name="txt_crontab_04"/>
+        <widget class="QLineEdit" name="txt_crontab_3"/>
        </item>
        <item>
-        <widget class="QLineEdit" name="txt_crontab_05"/>
+        <widget class="QLineEdit" name="txt_crontab_4"/>
        </item>
        <item>
-        <widget class="QLineEdit" name="txt_crontab_06"/>
+        <widget class="QLineEdit" name="txt_crontab_5"/>
        </item>
        <item>
-        <widget class="QLineEdit" name="txt_crontab_07"/>
+        <widget class="QLineEdit" name="txt_crontab_6"/>
        </item>
        <item>
-        <widget class="QLineEdit" name="txt_crontab_08"/>
+        <widget class="QLineEdit" name="txt_crontab_7"/>
        </item>
        <item>
-        <widget class="QLineEdit" name="txt_crontab_09"/>
+        <widget class="QLineEdit" name="txt_crontab_8"/>
        </item>
        <item>
-        <widget class="QLineEdit" name="txt_crontab_10"/>
+        <widget class="QLineEdit" name="txt_crontab_9"/>
        </item>
       </layout>
      </widget>

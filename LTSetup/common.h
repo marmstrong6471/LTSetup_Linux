@@ -4,7 +4,7 @@
 #include <QWidget>
 #include "mainwindow.h"
 
-extern QString versionnum;
+extern int ver_persistent;
 extern QWidget* crontab_tab;
 extern QWidget* fstab_tab;
 
