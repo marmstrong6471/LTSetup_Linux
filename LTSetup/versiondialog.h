@@ -20,6 +20,9 @@ private slots:
 
     void on_pushButton_clicked();
 
+signals:
+    void version_out(QString version_label, int version_num);
+
 private:
     Ui::VersionDialog *ui;
 };
