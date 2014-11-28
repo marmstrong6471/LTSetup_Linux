@@ -261,4 +261,5 @@ Makefile*
 .conf.bak
 *.user
 LTSetup/LTSetup.pro.user
+*.user.*
 build-LTSetup-Desktop_Qt_5_3_MinGW_32bit-Debug/lts.conf

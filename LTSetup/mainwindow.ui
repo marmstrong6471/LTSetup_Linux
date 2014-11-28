@@ -423,70 +423,70 @@
       </property>
       <layout class="QVBoxLayout" name="vl_scripts_01">
        <item>
-        <widget class="QLabel" name="label">
+        <widget class="QLabel" name="lb_RCFile01">
          <property name="text">
           <string>RCFile 01</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="label_2">
+        <widget class="QLabel" name="lb_RCFile02">
          <property name="text">
           <string>RCFile 02</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="label_11">
+        <widget class="QLabel" name="lb_RCFile03">
          <property name="text">
           <string>RCFile 03</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="label_12">
+        <widget class="QLabel" name="lb_RCFile04">
          <property name="text">
           <string>RCFile 04</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="label_14">
+        <widget class="QLabel" name="lb_RCFile05">
          <property name="text">
           <string>RCFile 05</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="label_15">
+        <widget class="QLabel" name="lb_RCFile06">
          <property name="text">
           <string>RCFile 06</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="label_16">
+        <widget class="QLabel" name="lb_RCFile07">
          <property name="text">
           <string>RCFile 07</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="label_17">
+        <widget class="QLabel" name="lb_RCFile08">
          <property name="text">
           <string>RCFile 08</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="label_18">
+        <widget class="QLabel" name="lb_RCFile09">
          <property name="text">
           <string>RCFile 09</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="label_13">
+        <widget class="QLabel" name="lb_RCFile10">
          <property name="text">
           <string>RCFile 10</string>
          </property>
@@ -505,70 +505,70 @@
       </property>
       <layout class="QVBoxLayout" name="vl_scripts_02">
        <item>
-        <widget class="QLineEdit" name="lineEdit_10">
+        <widget class="QLineEdit" name="txt_RC_01">
          <property name="RCFILE_01=" stdset="0">
           <string/>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_9">
+        <widget class="QLineEdit" name="txt_RC_02">
          <property name="RCFILE_02=" stdset="0">
           <string/>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_11">
+        <widget class="QLineEdit" name="txt_RC_03">
          <property name="RCFILE_03=" stdset="0">
           <string/>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_12">
+        <widget class="QLineEdit" name="txt_RC_04">
          <property name="RCFILE_04=" stdset="0">
           <string/>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_13">
+        <widget class="QLineEdit" name="txt_RC_05">
          <property name="RCFILE_05=" stdset="0">
           <string/>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_15">
+        <widget class="QLineEdit" name="txt_RC_06">
          <property name="RCFILE_06=" stdset="0">
           <string/>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_16">
+        <widget class="QLineEdit" name="txt_RC_07">
          <property name="RCFILE_07=" stdset="0">
           <string/>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_18">
+        <widget class="QLineEdit" name="txt_RC_08">
          <property name="RCFILE_08=" stdset="0">
           <string/>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_17">
+        <widget class="QLineEdit" name="txt_RC_09">
          <property name="RCFILE_09=" stdset="0">
           <string/>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_14">
+        <widget class="QLineEdit" name="txt_RC_10">
          <property name="RCFILE_10=" stdset="0">
           <string/>
          </property>
@@ -587,70 +587,70 @@
       </property>
       <layout class="QVBoxLayout" name="vl_scripts_03">
        <item>
-        <widget class="QLabel" name="label_19">
+        <widget class="QLabel" name="lb_mod_01">
          <property name="text">
           <string>Module 01</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="label_21">
+        <widget class="QLabel" name="lb_mod_02">
          <property name="text">
           <string>Module 02</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="label_22">
+        <widget class="QLabel" name="lb_mod_03">
          <property name="text">
           <string>Module 03</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="label_20">
+        <widget class="QLabel" name="lb_mod_04">
          <property name="text">
           <string>Module 04</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="label_24">
+        <widget class="QLabel" name="lb_mod_05">
          <property name="text">
           <string>Module 05</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="label_26">
+        <widget class="QLabel" name="lb_mod_06">
          <property name="text">
           <string>Module 06</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="label_25">
+        <widget class="QLabel" name="lb_mod_07">
          <property name="text">
           <string>Module 07</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="label_28">
+        <widget class="QLabel" name="lb_mod_08">
          <property name="text">
           <string>Module 08</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="label_27">
+        <widget class="QLabel" name="lb_mod_09">
          <property name="text">
           <string>Module 09</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="label_23">
+        <widget class="QLabel" name="lb_mod_10">
          <property name="text">
           <string>Module 10</string>
          </property>
@@ -669,70 +669,70 @@
       </property>
       <layout class="QVBoxLayout" name="vl_scripts_04">
        <item>
-        <widget class="QLineEdit" name="lineEdit_19">
+        <widget class="QLineEdit" name="txt_mod_01">
          <property name="MODULE_01=" stdset="0">
           <string/>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_20">
+        <widget class="QLineEdit" name="txt_mod_02">
          <property name="MODULE_02=" stdset="0">
           <string/>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_21">
+        <widget class="QLineEdit" name="txt_mod_03">
          <property name="MODULE_03=" stdset="0">
           <string/>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_22">
+        <widget class="QLineEdit" name="txt_mod_04">
          <property name="MODULE_04=" stdset="0">
           <string/>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_24">
+        <widget class="QLineEdit" name="txt_mod_05">
          <property name="MODULE_05=" stdset="0">
           <string/>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_25">
+        <widget class="QLineEdit" name="txt_mod_06">
          <property name="MODULE_06=" stdset="0">
           <string/>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_27">
+        <widget class="QLineEdit" name="txt_mod_07">
          <property name="MODULE_07=" stdset="0">
           <string/>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_26">
+        <widget class="QLineEdit" name="txt_mod_08">
          <property name="MODULE_08=" stdset="0">
           <string/>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_28">
+        <widget class="QLineEdit" name="txt_mod_09">
          <property name="MODULE_09=" stdset="0">
           <string/>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_23">
+        <widget class="QLineEdit" name="txt_mod_10">
          <property name="MODULE_10=" stdset="0">
           <string/>
          </property>
@@ -741,7 +741,7 @@
       </layout>
      </widget>
     </widget>
-    <widget class="QWidget" name="tab_3">
+    <widget class="QWidget" name="tab_printer">
      <attribute name="title">
       <string>Printer</string>
      </attribute>
@@ -754,65 +754,65 @@
         <height>261</height>
        </rect>
       </property>
-      <layout class="QVBoxLayout" name="verticalLayout_8">
+      <layout class="QVBoxLayout" name="vl_printer_02">
        <item>
-        <widget class="QLabel" name="label_29">
+        <widget class="QLabel" name="lb_printerdevice">
          <property name="text">
           <string>Printer 0 Device</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="label_30">
+        <widget class="QLabel" name="lb_printerport">
          <property name="text">
           <string>Printer 0 Port</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="label_31">
+        <widget class="QLabel" name="lb_printertype">
          <property name="text">
           <string>Printer 0 Type</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="label_32">
+        <widget class="QLabel" name="lb_printerspeed">
          <property name="text">
           <string>Printer 0 Speed</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="label_33">
+        <widget class="QLabel" name="lb_printerflow">
          <property name="text">
           <string>Printer 0 Flow Control</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="label_35">
+        <widget class="QLabel" name="lb_printerdatabits">
          <property name="text">
           <string>Printer 0 Databits</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="label_36">
+        <widget class="QLabel" name="lb_printeroptions">
          <property name="text">
           <string>Printer 0 Options</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="label_37">
+        <widget class="QLabel" name="lb_printerlist">
          <property name="text">
           <string>LDM Printer List</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="label_34">
+        <widget class="QLabel" name="lb_printerdefault">
          <property name="text">
           <string>LDM Printer Default</string>
          </property>
@@ -829,16 +829,16 @@
         <height>261</height>
        </rect>
       </property>
-      <layout class="QVBoxLayout" name="verticalLayout_9">
+      <layout class="QVBoxLayout" name="vl_printer_03">
        <item>
-        <widget class="QLineEdit" name="lineEdit_30">
+        <widget class="QLineEdit" name="txt_printerdevice">
          <property name="PRINTER_0_DEVICE=" stdset="0">
           <string/>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_31">
+        <widget class="QLineEdit" name="txt_printerport">
          <property name="text">
           <string>9100</string>
          </property>
@@ -848,14 +848,14 @@
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_32">
+        <widget class="QLineEdit" name="txt_printertype">
          <property name="PRINTER_0_TYPE=" stdset="0">
           <string/>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_29">
+        <widget class="QLineEdit" name="txt_printerspeed">
          <property name="text">
           <string>9600</string>
          </property>
@@ -865,14 +865,14 @@
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_33">
+        <widget class="QLineEdit" name="txt_printerflow">
          <property name="PRINTER_0_FLOWCTRL=" stdset="0">
           <string/>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_34">
+        <widget class="QLineEdit" name="txt_printerdatabits">
          <property name="text">
           <string>8</string>
          </property>
@@ -882,21 +882,21 @@
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_36">
+        <widget class="QLineEdit" name="txt_printeroptions">
          <property name="PRINTER_0_OPTIONS=" stdset="0">
           <string/>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_37">
+        <widget class="QLineEdit" name="txt_printerlist">
          <property name="LDM_PRINTER_LIST=" stdset="0">
           <string/>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_35">
+        <widget class="QLineEdit" name="txt_printerdefault">
          <property name="LDM_PRINTER_DEFAULT=" stdset="0">
           <string/>
          </property>
@@ -913,9 +913,9 @@
         <height>81</height>
        </rect>
       </property>
-      <layout class="QVBoxLayout" name="verticalLayout_10">
+      <layout class="QVBoxLayout" name="vl_printer_01">
        <item>
-        <widget class="QCheckBox" name="checkBox_11">
+        <widget class="QCheckBox" name="cb_printer_write">
          <property name="text">
           <string>Printer 0 Write Only</string>
          </property>
@@ -925,7 +925,7 @@
         </widget>
        </item>
        <item>
-        <widget class="QCheckBox" name="checkBox_10">
+        <widget class="QCheckBox" name="cb_printparity">
          <property name="text">
           <string>Printer 0 Parity</string>
          </property>
@@ -935,7 +935,7 @@
         </widget>
        </item>
        <item>
-        <widget class="QCheckBox" name="checkBox_12">
+        <widget class="QCheckBox" name="cb_scanner">
          <property name="text">
           <string>Scanner</string>
          </property>
@@ -947,7 +947,7 @@
       </layout>
      </widget>
     </widget>
-    <widget class="QWidget" name="tab_4">
+    <widget class="QWidget" name="tab_keyboard">
      <attribute name="title">
       <string>Keyboard</string>
      </attribute>
@@ -960,44 +960,44 @@
         <height>261</height>
        </rect>
       </property>
-      <layout class="QVBoxLayout" name="verticalLayout_11">
+      <layout class="QVBoxLayout" name="vl_keyboard_01">
        <item>
-        <widget class="QLabel" name="label_38">
+        <widget class="QLabel" name="lb_keymap">
          <property name="text">
           <string>Console Keymap</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="label_39">
+        <widget class="QLabel" name="lb_xkblayout">
          <property name="text">
           <string>XKB Layout</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="label_40">
+        <widget class="QLabel" name="lb_xkbmodel">
          <property name="text">
           <string>XKB Model</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="label_42">
+        <widget class="QLabel" name="lb_xkbvariant">
          <property name="text">
           <string>XKB Variant</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="label_43">
+        <widget class="QLabel" name="lb_xkbrules">
          <property name="text">
           <string>XKB Rules</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="label_41">
+        <widget class="QLabel" name="lb_xkboptions">
          <property name="text">
           <string>XKB Options</string>
          </property>
@@ -1014,9 +1014,9 @@
         <height>261</height>
        </rect>
       </property>
-      <layout class="QVBoxLayout" name="verticalLayout_12">
+      <layout class="QVBoxLayout" name="vl_keyboard_02">
        <item>
-        <widget class="QLineEdit" name="lineEdit_38">
+        <widget class="QLineEdit" name="txt_keymap">
          <property name="text">
           <string>en</string>
          </property>
@@ -1026,35 +1026,35 @@
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_40">
+        <widget class="QLineEdit" name="txt_xkblayout">
          <property name="XKBLAYOUT=" stdset="0">
           <string/>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_39">
+        <widget class="QLineEdit" name="txt_xkbmodel">
          <property name="XKBMODEL=" stdset="0">
           <string/>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_42">
+        <widget class="QLineEdit" name="txt_xkbvariant">
          <property name="XKBVARIANT=" stdset="0">
           <string/>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_41">
+        <widget class="QLineEdit" name="txt_xkbrules">
          <property name="XKBRULES=" stdset="0">
           <string/>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_43">
+        <widget class="QLineEdit" name="txt_xkboptions">
          <property name="XKBOPTIONS=" stdset="0">
           <string/>
          </property>
@@ -1063,11 +1063,11 @@
       </layout>
      </widget>
     </widget>
-    <widget class="QWidget" name="tab_5">
+    <widget class="QWidget" name="tab_touchscreen">
      <attribute name="title">
       <string>Touchscreen</string>
      </attribute>
-     <widget class="QTextEdit" name="textEdit">
+     <widget class="QTextEdit" name="txtedit_touchscreen">
       <property name="geometry">
        <rect>
         <x>300</x>
@@ -1095,7 +1095,7 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot; margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt;&quot;&gt;                                                             delay&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
       </property>
      </widget>
-     <widget class="QCheckBox" name="checkBox">
+     <widget class="QCheckBox" name="cb_enabletouch">
       <property name="geometry">
        <rect>
         <x>10</x>
@@ -1112,7 +1112,7 @@ p, li { white-space: pre-wrap; }
       </property>
      </widget>
     </widget>
-    <widget class="QWidget" name="tab_6">
+    <widget class="QWidget" name="tab_sound">
      <attribute name="title">
       <string>Sound</string>
      </attribute>
@@ -1125,51 +1125,51 @@ p, li { white-space: pre-wrap; }
         <height>261</height>
        </rect>
       </property>
-      <layout class="QVBoxLayout" name="verticalLayout_13">
+      <layout class="QVBoxLayout" name="vl_sound_01">
        <item>
-        <widget class="QLabel" name="label_44">
+        <widget class="QLabel" name="lb_sounddaemon">
          <property name="text">
           <string>Sound Daemon</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="label_45">
+        <widget class="QLabel" name="lb_volume">
          <property name="text">
           <string>Volume</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="label_46">
+        <widget class="QLabel" name="lb_headphonevolume">
          <property name="text">
           <string>Headphone Volume</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="label_47">
+        <widget class="QLabel" name="lb_pcmvolume">
          <property name="text">
           <string>PCM Volume</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="label_48">
+        <widget class="QLabel" name="lb_cdvolume">
          <property name="text">
           <string>CD Volume</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="label_51">
+        <widget class="QLabel" name="lb_frontvolume">
          <property name="text">
           <string>Front Volume</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="label_50">
+        <widget class="QLabel" name="lb_micvolume">
          <property name="text">
           <string>Mic Volume</string>
          </property>
@@ -1186,9 +1186,9 @@ p, li { white-space: pre-wrap; }
         <height>261</height>
        </rect>
       </property>
-      <layout class="QVBoxLayout" name="verticalLayout_14">
+      <layout class="QVBoxLayout" name="vl_sound_02">
        <item>
-        <widget class="QLineEdit" name="lineEdit_45">
+        <widget class="QLineEdit" name="txt_sounddaemon">
          <property name="text">
           <string>pulse</string>
          </property>
@@ -1198,7 +1198,7 @@ p, li { white-space: pre-wrap; }
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_47">
+        <widget class="QLineEdit" name="txt_volume">
          <property name="text">
           <string>90</string>
          </property>
@@ -1208,35 +1208,35 @@ p, li { white-space: pre-wrap; }
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_46">
+        <widget class="QLineEdit" name="txt_headphonevolume">
          <property name="HEADPHONE_VOLUME=" stdset="0">
           <number>0</number>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_48">
+        <widget class="QLineEdit" name="txt_pcmvolume">
          <property name="PCM_VOLUME=" stdset="0">
           <number>0</number>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_50">
+        <widget class="QLineEdit" name="txt_cdvolume">
          <property name="CD_VOLUME=" stdset="0">
           <number>0</number>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_49">
+        <widget class="QLineEdit" name="txt_frontvolume">
          <property name="FRONT_VOLUME=" stdset="0">
           <number>0</number>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_44">
+        <widget class="QLineEdit" name="txt_micvolume">
          <property name="MIC_VOLUME=" stdset="0">
           <number>0</number>
          </property>
@@ -1244,7 +1244,7 @@ p, li { white-space: pre-wrap; }
        </item>
       </layout>
      </widget>
-     <widget class="QCheckBox" name="checkBox_13">
+     <widget class="QCheckBox" name="cb_sound">
       <property name="geometry">
        <rect>
         <x>220</x>
@@ -1261,7 +1261,7 @@ p, li { white-space: pre-wrap; }
       </property>
      </widget>
     </widget>
-    <widget class="QWidget" name="tab_7">
+    <widget class="QWidget" name="tab_xorg">
      <attribute name="title">
       <string>Xorg</string>
      </attribute>
@@ -1274,7 +1274,7 @@ p, li { white-space: pre-wrap; }
         <height>141</height>
        </rect>
       </property>
-      <layout class="QVBoxLayout" name="verticalLayout_35">
+      <layout class="QVBoxLayout" name="vl_xorg_05">
        <item>
         <widget class="QCheckBox" name="checkBox_30">
          <property name="text">
@@ -1326,7 +1326,7 @@ p, li { white-space: pre-wrap; }
         <height>121</height>
        </rect>
       </property>
-      <layout class="QVBoxLayout" name="verticalLayout">
+      <layout class="QVBoxLayout" name="vl_xorg_01">
        <item>
         <widget class="QLabel" name="label_3">
          <property name="text">
@@ -1348,6 +1348,13 @@ p, li { white-space: pre-wrap; }
          </property>
         </widget>
        </item>
+       <item>
+        <widget class="QLabel" name="label_69">
+         <property name="text">
+          <string>X Blanking</string>
+         </property>
+        </widget>
+       </item>
       </layout>
      </widget>
      <widget class="QWidget" name="verticalLayoutWidget_17">
@@ -1359,7 +1366,7 @@ p, li { white-space: pre-wrap; }
         <height>121</height>
        </rect>
       </property>
-      <layout class="QVBoxLayout" name="verticalLayout_2">
+      <layout class="QVBoxLayout" name="vl_xorg_02">
        <item>
         <widget class="QLineEdit" name="lineEdit_2">
          <property name="X_CONF=" stdset="0">
@@ -1384,6 +1391,9 @@ p, li { white-space: pre-wrap; }
          </property>
         </widget>
        </item>
+       <item>
+        <widget class="QLineEdit" name="lineEdit_52"/>
+       </item>
       </layout>
      </widget>
      <widget class="QWidget" name="verticalLayoutWidget_18">
@@ -1395,7 +1405,7 @@ p, li { white-space: pre-wrap; }
         <height>141</height>
        </rect>
       </property>
-      <layout class="QVBoxLayout" name="verticalLayout_3">
+      <layout class="QVBoxLayout" name="vl_xorg_03">
        <item>
         <widget class="QLabel" name="label_6">
          <property name="text">
@@ -1442,7 +1452,7 @@ p, li { white-space: pre-wrap; }
         <height>141</height>
        </rect>
       </property>
-      <layout class="QVBoxLayout" name="verticalLayout_4">
+      <layout class="QVBoxLayout" name="vl_xorg_04">
        <item>
         <widget class="QLineEdit" name="lineEdit_4">
          <property name="XFS_SERVER=" stdset="0">
@@ -1479,6 +1489,195 @@ p, li { white-space: pre-wrap; }
         </widget>
        </item>
       </layout>
+     </widget>
+     <widget class="QComboBox" name="cb_colordepth">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>150</y>
+        <width>69</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>24</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>2</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>4</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>8</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>16</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>32</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLabel" name="lb_colordepth">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>150</y>
+        <width>91</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Color Depth (Bits)</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="cb_customxorg">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>240</y>
+        <width>141</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Custom Option Lines</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lb_xorgwarning">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>220</y>
+        <width>201</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Extremely advanced and rarely needed:</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>Xorg Options</string>
+     </attribute>
+     <widget class="QLabel" name="label_68">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>10</y>
+        <width>151</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>X_OPTION Lines 01 - 12</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="textEdit_4">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>291</width>
+        <height>221</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_70">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>90</y>
+        <width>46</width>
+        <height>13</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>X Mode 0</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_71">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>130</y>
+        <width>46</width>
+        <height>13</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>X Mode 1</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_72">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>170</y>
+        <width>46</width>
+        <height>13</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>X Mode 2</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_53">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>90</y>
+        <width>113</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_54">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>130</y>
+        <width>113</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_55">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>170</y>
+        <width>113</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_73">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>50</y>
+        <width>271</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Older resolution setting mode, not needed with XRANDR</string>
+      </property>
      </widget>
     </widget>
     <widget class="QWidget" name="tab_8">
@@ -2050,6 +2249,280 @@ p, li { white-space: pre-wrap; }
      <attribute name="title">
       <string>LDM</string>
      </attribute>
+     <widget class="QWidget" name="verticalLayoutWidget_24">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>111</width>
+        <height>261</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_17">
+       <item>
+        <widget class="QLabel" name="label_74">
+         <property name="text">
+          <string>LDM Autologin</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_75">
+         <property name="text">
+          <string>LDM Debug</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_77">
+         <property name="text">
+          <string>LDM DirectX</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_76">
+         <property name="text">
+          <string>LDM Guest Login</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_79">
+         <property name="text">
+          <string>LDM Syslog</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_78">
+         <property name="text">
+          <string>Network Compression</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_80">
+         <property name="text">
+          <string>SSH Follow Symlinks</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_25">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>0</y>
+        <width>81</width>
+        <height>261</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_18">
+       <item>
+        <widget class="QComboBox" name="comboBox_15">
+         <item>
+          <property name="text">
+           <string>False</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>True</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBox_16">
+         <item>
+          <property name="text">
+           <string/>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>True</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>False</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBox_14">
+         <item>
+          <property name="text">
+           <string>False</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>True</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBox_17">
+         <item>
+          <property name="text">
+           <string>False</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>True</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBox_18">
+         <item>
+          <property name="text">
+           <string>False</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>True</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBox_19">
+         <item>
+          <property name="text">
+           <string>False</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>True</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBox_20">
+         <item>
+          <property name="text">
+           <string>True</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>False</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_26">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>0</y>
+        <width>160</width>
+        <height>261</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_20">
+       <item>
+        <widget class="QLabel" name="label_82">
+         <property name="text">
+          <string>LDM Login Timeout (Seconds)</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_81">
+         <property name="text">
+          <string>LDM Autologin Username</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_83">
+         <property name="text">
+          <string>LDM Autologin Password</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_84">
+         <property name="text">
+          <string>LDM Language</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_85">
+         <property name="text">
+          <string>SSH Override Port</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_86">
+         <property name="text">
+          <string>LDM Session</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_87">
+         <property name="text">
+          <string>LDM XSession</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_27">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>0</y>
+        <width>271</width>
+        <height>261</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_21">
+       <item>
+        <widget class="QLineEdit" name="lineEdit_56"/>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEdit_58"/>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEdit_59"/>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEdit_60"/>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEdit_61"/>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEdit_62"/>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEdit_57">
+         <property name="text">
+          <string>Xsession</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
     </widget>
     <widget class="QWidget" name="tab_11">
      <attribute name="title">
@@ -2194,6 +2667,15 @@ p, li { white-space: pre-wrap; }
     </property>
    </widget>
   </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
     <rect>
@@ -2204,15 +2686,6 @@ p, li { white-space: pre-wrap; }
     </rect>
    </property>
   </widget>
-  <widget class="QToolBar" name="mainToolBar">
-   <attribute name="toolBarArea">
-    <enum>TopToolBarArea</enum>
-   </attribute>
-   <attribute name="toolBarBreak">
-    <bool>false</bool>
-   </attribute>
-  </widget>
-  <widget class="QStatusBar" name="statusBar"/>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources/>
