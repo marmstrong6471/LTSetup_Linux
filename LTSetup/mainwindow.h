@@ -26,6 +26,18 @@ private slots:
 
     void on_btn_versionsel_clicked();
 
+    void on_cb_nbdswap_toggled(bool checked);
+
+    void on_cb_localapp_toggled(bool checked);
+
+    void on_cb_scripts_toggled(bool checked);
+
+    void on_com_printertype_currentIndexChanged(int index);
+
+    void on_cb_keyboard_toggled(bool checked);
+
+    void on_cb_customxorg_toggled(bool checked);
+
 private:
     //static int current_version;
     Ui::MainWindow *ui;

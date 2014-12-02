@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>LTSetup</string>
   </property>
   <widget class="QWidget" name="centralWidget">
    <widget class="QTabWidget" name="tabWidget">
@@ -24,7 +24,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>12</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="tab_general">
      <attribute name="title">
@@ -45,6 +45,9 @@
          <property name="text">
           <string>Configure FSTAB</string>
          </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
          <property name="CONFIGURE_FSTAB=" stdset="0">
           <string/>
          </property>
@@ -64,6 +67,9 @@
         <widget class="QCheckBox" name="cb_ldev">
          <property name="text">
           <string>LocalDev</string>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
          </property>
          <property name="LOCALDEV=" stdset="0">
           <string/>
@@ -94,6 +100,9 @@
         <widget class="QCheckBox" name="cb_ldevdenyinternal">
          <property name="text">
           <string>LocalDev Deny Internal Disks</string>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
          </property>
          <property name="LOCALDEV_DENY_INTERNAL_DISKS=" stdset="0">
           <string/>
@@ -137,6 +146,13 @@
          </property>
          <property name="checked">
           <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="cb_scripts">
+         <property name="text">
+          <string>Use Custom Scripts</string>
          </property>
         </widget>
        </item>
@@ -236,6 +252,9 @@
        </item>
        <item>
         <widget class="QLineEdit" name="txt_localappextra">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
          <property name="LOCAL_APPS_EXTRAMOUNTS=" stdset="0">
           <string/>
          </property>
@@ -250,6 +269,9 @@
        </item>
        <item>
         <widget class="QLineEdit" name="txt_nbdswapport">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
          <property name="NBD_SWAP_PORT=" stdset="0">
           <string/>
          </property>
@@ -257,6 +279,9 @@
        </item>
        <item>
         <widget class="QLineEdit" name="txt_nbdswapserver">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
          <property name="NBD_SWAP_SERVER=" stdset="0">
           <string/>
          </property>
@@ -840,7 +865,7 @@
        <item>
         <widget class="QLineEdit" name="txt_printerport">
          <property name="text">
-          <string>9100</string>
+          <string/>
          </property>
          <property name="PRINTER_0_PORT=" stdset="0">
           <number>0</number>
@@ -848,16 +873,36 @@
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="txt_printertype">
-         <property name="PRINTER_0_TYPE=" stdset="0">
-          <string/>
-         </property>
+        <widget class="QComboBox" name="com_printertype">
+         <item>
+          <property name="text">
+           <string>Autodetect</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Parallel</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>USB</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Serial</string>
+          </property>
+         </item>
         </widget>
        </item>
        <item>
         <widget class="QLineEdit" name="txt_printerspeed">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
          <property name="text">
-          <string>9600</string>
+          <string/>
          </property>
          <property name="PRINTER_0_SPEED=" stdset="0">
           <number>0</number>
@@ -866,6 +911,9 @@
        </item>
        <item>
         <widget class="QLineEdit" name="txt_printerflow">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
          <property name="PRINTER_0_FLOWCTRL=" stdset="0">
           <string/>
          </property>
@@ -873,8 +921,11 @@
        </item>
        <item>
         <widget class="QLineEdit" name="txt_printerdatabits">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
          <property name="text">
-          <string>8</string>
+          <string/>
          </property>
          <property name="PRINTER_0_DATABITS=" stdset="0">
           <number>0</number>
@@ -883,6 +934,9 @@
        </item>
        <item>
         <widget class="QLineEdit" name="txt_printeroptions">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
          <property name="PRINTER_0_OPTIONS=" stdset="0">
           <string/>
          </property>
@@ -926,6 +980,9 @@
        </item>
        <item>
         <widget class="QCheckBox" name="cb_printparity">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
          <property name="text">
           <string>Printer 0 Parity</string>
          </property>
@@ -954,7 +1011,7 @@
      <widget class="QWidget" name="verticalLayoutWidget_11">
       <property name="geometry">
        <rect>
-        <x>0</x>
+        <x>150</x>
         <y>0</y>
         <width>91</width>
         <height>261</height>
@@ -1008,17 +1065,20 @@
      <widget class="QWidget" name="verticalLayoutWidget_12">
       <property name="geometry">
        <rect>
-        <x>90</x>
+        <x>240</x>
         <y>0</y>
         <width>231</width>
-        <height>261</height>
+        <height>268</height>
        </rect>
       </property>
       <layout class="QVBoxLayout" name="vl_keyboard_02">
        <item>
         <widget class="QLineEdit" name="txt_keymap">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
          <property name="text">
-          <string>en</string>
+          <string/>
          </property>
          <property name="CONSOLE_KEYMAP=" stdset="0">
           <string/>
@@ -1027,6 +1087,9 @@
        </item>
        <item>
         <widget class="QLineEdit" name="txt_xkblayout">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
          <property name="XKBLAYOUT=" stdset="0">
           <string/>
          </property>
@@ -1034,6 +1097,9 @@
        </item>
        <item>
         <widget class="QLineEdit" name="txt_xkbmodel">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
          <property name="XKBMODEL=" stdset="0">
           <string/>
          </property>
@@ -1041,6 +1107,9 @@
        </item>
        <item>
         <widget class="QLineEdit" name="txt_xkbvariant">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
          <property name="XKBVARIANT=" stdset="0">
           <string/>
          </property>
@@ -1048,6 +1117,9 @@
        </item>
        <item>
         <widget class="QLineEdit" name="txt_xkbrules">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
          <property name="XKBRULES=" stdset="0">
           <string/>
          </property>
@@ -1055,6 +1127,9 @@
        </item>
        <item>
         <widget class="QLineEdit" name="txt_xkboptions">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
          <property name="XKBOPTIONS=" stdset="0">
           <string/>
          </property>
@@ -1062,53 +1137,17 @@
        </item>
       </layout>
      </widget>
-    </widget>
-    <widget class="QWidget" name="tab_touchscreen">
-     <attribute name="title">
-      <string>Touchscreen</string>
-     </attribute>
-     <widget class="QTextEdit" name="txtedit_touchscreen">
-      <property name="geometry">
-       <rect>
-        <x>300</x>
-        <y>10</y>
-        <width>341</width>
-        <height>241</height>
-       </rect>
-      </property>
-      <property name="html">
-       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt;&quot;&gt; X_TOUCH_DEVICE     Path to device   /dev/ttyS0    set device for&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt;&quot;&gt;                                                             touchscreen&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt;&quot;&gt;           X_TOUCH_DRIVER     Touchscreen      elographics   set driver for&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt;&quot;&gt;                              driver                         touchscreen&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt;&quot;&gt;           X_TOUCH_MAXX       integer          3588          Xmax&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt;&quot;&gt;           X_TOUCH_MAXY       integer          3526          Ymax&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt;&quot;&gt;           X_TOUCH_MINX       integer          433           Xmin&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Courier New,courier'; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt;&quot;&gt;           X_TOUCH_MINY       integer          569           Ymin&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt;&quot;&gt;           X_TOUCH_UNDELAY    integer          10            Untouch delay&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt;&quot;&gt;           X_TOUCH_RTPDELAY   integer          10            Repeat touch&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt;&quot;&gt;                                                             delay&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-      </property>
-     </widget>
-     <widget class="QCheckBox" name="cb_enabletouch">
+     <widget class="QCheckBox" name="cb_keyboard">
       <property name="geometry">
        <rect>
         <x>10</x>
         <y>10</y>
-        <width>111</width>
-        <height>17</height>
+        <width>121</width>
+        <height>31</height>
        </rect>
       </property>
       <property name="text">
-       <string>Enable Touch</string>
-      </property>
-      <property name="USE_TOUCH=" stdset="0">
-       <bool>false</bool>
+       <string>Manual Config</string>
       </property>
      </widget>
     </widget>
@@ -1188,19 +1227,28 @@ p, li { white-space: pre-wrap; }
       </property>
       <layout class="QVBoxLayout" name="vl_sound_02">
        <item>
-        <widget class="QLineEdit" name="txt_sounddaemon">
-         <property name="text">
-          <string>pulse</string>
-         </property>
-         <property name="SOUND_DAEMON=" stdset="0">
-          <string/>
-         </property>
+        <widget class="QComboBox" name="com_sounddaemon">
+         <item>
+          <property name="text">
+           <string>Pulse</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ESD</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>NASD</string>
+          </property>
+         </item>
         </widget>
        </item>
        <item>
         <widget class="QLineEdit" name="txt_volume">
          <property name="text">
-          <string>90</string>
+          <string/>
          </property>
          <property name="VOLUME=" stdset="0">
           <number>0</number>
@@ -1678,30 +1726,6 @@ p, li { white-space: pre-wrap; }
       <property name="text">
        <string>Older resolution setting mode, not needed with XRANDR</string>
       </property>
-     </widget>
-    </widget>
-    <widget class="QWidget" name="tab_xrandr">
-     <attribute name="title">
-      <string>Xrandr</string>
-     </attribute>
-     <widget class="QWidget" name="verticalLayoutWidget_16">
-      <property name="geometry">
-       <rect>
-        <x>0</x>
-        <y>10</y>
-        <width>160</width>
-        <height>31</height>
-       </rect>
-      </property>
-      <layout class="QVBoxLayout" name="vl_xrandr">
-       <item>
-        <widget class="QCheckBox" name="cb_disablexrandr">
-         <property name="text">
-          <string>Disable Xrandr</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
      </widget>
     </widget>
     <widget class="QWidget" name="tab_screen">
@@ -2676,16 +2700,6 @@ p, li { white-space: pre-wrap; }
    </attribute>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
-  <widget class="QMenuBar" name="menuBar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>665</width>
-     <height>21</height>
-    </rect>
-   </property>
-  </widget>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources/>
