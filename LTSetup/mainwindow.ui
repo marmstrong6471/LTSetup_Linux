@@ -24,7 +24,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>6</number>
+     <number>9</number>
     </property>
     <widget class="QWidget" name="tab_general">
      <attribute name="title">
@@ -1454,7 +1454,11 @@
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="txt_xblanking"/>
+        <widget class="QSpinBox" name="sb_xblanking">
+         <property name="maximum">
+          <number>600</number>
+         </property>
+        </widget>
        </item>
       </layout>
      </widget>
@@ -1561,7 +1565,7 @@
        </item>
       </layout>
      </widget>
-     <widget class="QComboBox" name="cb_colordepth">
+     <widget class="QComboBox" name="com_colordepth">
       <property name="geometry">
        <rect>
         <x>420</x>
@@ -1570,11 +1574,9 @@
         <height>22</height>
        </rect>
       </property>
-      <item>
-       <property name="text">
-        <string>24</string>
-       </property>
-      </item>
+      <property name="currentIndex">
+       <number>4</number>
+      </property>
       <item>
        <property name="text">
         <string>2</string>
@@ -1593,6 +1595,11 @@
       <item>
        <property name="text">
         <string>16</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>24</string>
        </property>
       </item>
       <item>
@@ -1648,24 +1655,14 @@
      <widget class="QLabel" name="lb_advxorg">
       <property name="geometry">
        <rect>
-        <x>70</x>
-        <y>10</y>
+        <x>80</x>
+        <y>20</y>
         <width>151</width>
         <height>16</height>
        </rect>
       </property>
       <property name="text">
        <string>X_OPTION Lines 01 - 12</string>
-      </property>
-     </widget>
-     <widget class="QTextEdit" name="txt_xoptions">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>30</y>
-        <width>291</width>
-        <height>221</height>
-       </rect>
       </property>
      </widget>
      <widget class="QLabel" name="lb_xmode0">
@@ -1749,6 +1746,54 @@
       <property name="text">
        <string>Older resolution setting mode, not needed with XRANDR</string>
       </property>
+     </widget>
+     <widget class="QWidget" name="formLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>40</y>
+        <width>271</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <layout class="QFormLayout" name="formLayout">
+       <item row="0" column="0">
+        <widget class="QLineEdit" name="txt_xoption0"/>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="txt_xoption1"/>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLineEdit" name="txt_xoption2"/>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="txt_xoption3"/>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLineEdit" name="txt_xoption4"/>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLineEdit" name="txt_xoption5"/>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLineEdit" name="txt_xoption6"/>
+       </item>
+       <item row="3" column="1">
+        <widget class="QLineEdit" name="txt_xoption7"/>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLineEdit" name="txt_xoption8"/>
+       </item>
+       <item row="4" column="1">
+        <widget class="QLineEdit" name="txt_xoption9"/>
+       </item>
+       <item row="5" column="0">
+        <widget class="QLineEdit" name="txt_xoption10"/>
+       </item>
+       <item row="5" column="1">
+        <widget class="QLineEdit" name="txt_xoption11"/>
+       </item>
+      </layout>
      </widget>
     </widget>
     <widget class="QWidget" name="tab_screen">
@@ -1834,7 +1879,7 @@
       </property>
       <layout class="QVBoxLayout" name="vl_screen02">
        <item>
-        <widget class="QComboBox" name="com_screen1">
+        <widget class="QComboBox" name="com_screen0">
          <property name="SCREEN_01=" stdset="0">
           <string/>
          </property>
@@ -1866,7 +1911,7 @@
         </widget>
        </item>
        <item>
-        <widget class="QComboBox" name="com_screen2">
+        <widget class="QComboBox" name="com_screen1">
          <property name="SCREEN_02=" stdset="0">
           <string/>
          </property>
@@ -1898,7 +1943,7 @@
         </widget>
        </item>
        <item>
-        <widget class="QComboBox" name="com_screen3">
+        <widget class="QComboBox" name="com_screen2">
          <property name="SCREEN_03=" stdset="0">
           <string/>
          </property>
@@ -1930,7 +1975,7 @@
         </widget>
        </item>
        <item>
-        <widget class="QComboBox" name="com_screen4">
+        <widget class="QComboBox" name="com_screen3">
          <property name="SCREEN_04=" stdset="0">
           <string/>
          </property>
@@ -1962,7 +2007,7 @@
         </widget>
        </item>
        <item>
-        <widget class="QComboBox" name="com_screen5">
+        <widget class="QComboBox" name="com_screen4">
          <property name="SCREEN_05=" stdset="0">
           <string/>
          </property>
@@ -1994,7 +2039,7 @@
         </widget>
        </item>
        <item>
-        <widget class="QComboBox" name="com_screen6">
+        <widget class="QComboBox" name="com_screen5">
          <property name="SCREEN_06=" stdset="0">
           <string/>
          </property>
@@ -2026,7 +2071,7 @@
         </widget>
        </item>
        <item>
-        <widget class="QComboBox" name="com_screen7">
+        <widget class="QComboBox" name="com_screen6">
          <property name="SCREEN_07=" stdset="0">
           <string/>
          </property>
@@ -2058,7 +2103,7 @@
         </widget>
        </item>
        <item>
-        <widget class="QComboBox" name="com_screen8">
+        <widget class="QComboBox" name="com_screen7">
          <property name="SCREEN_08=" stdset="0">
           <string/>
          </property>
@@ -2149,7 +2194,7 @@
       </property>
       <layout class="QVBoxLayout" name="vl_screen04">
        <item>
-        <widget class="QComboBox" name="com_screen9">
+        <widget class="QComboBox" name="com_screen8">
          <property name="SCREEN_09=" stdset="0">
           <string/>
          </property>
@@ -2181,7 +2226,7 @@
         </widget>
        </item>
        <item>
-        <widget class="QComboBox" name="com_screen10">
+        <widget class="QComboBox" name="com_screen9">
          <property name="SCREEN_10=" stdset="0">
           <string/>
          </property>
@@ -2213,7 +2258,7 @@
         </widget>
        </item>
        <item>
-        <widget class="QComboBox" name="com_screen11">
+        <widget class="QComboBox" name="com_screen10">
          <property name="SCREEN_11=" stdset="0">
           <string/>
          </property>
@@ -2245,7 +2290,7 @@
         </widget>
        </item>
        <item>
-        <widget class="QComboBox" name="com_screen12">
+        <widget class="QComboBox" name="com_screen11">
          <property name="SCREEN_12=" stdset="0">
           <string/>
          </property>
@@ -2547,10 +2592,18 @@
         <widget class="QLineEdit" name="txt_logtimeout"/>
        </item>
        <item>
-        <widget class="QLineEdit" name="txt_autouser"/>
+        <widget class="QLineEdit" name="txt_autouser">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+        </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="txt_autopass"/>
+        <widget class="QLineEdit" name="txt_autopass">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+        </widget>
        </item>
        <item>
         <widget class="QLineEdit" name="txt_language"/>

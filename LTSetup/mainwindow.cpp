@@ -350,6 +350,68 @@ QString MainWindow::config_compile()
             config += "X_MOUSE_PROTOCOL=" + ui->txt_xmousepro->text() + "\n";
         }
 
+        if(ui->cb_mouseemu->isChecked())
+            config += "X_MOUSE_EMULATE3BTN=Y\n";
+
+        config += "X_NUMLOCK=" + bool_to_string(ui->cb_numlock->isChecked()) + "\n";
+
+        config += "X_COLOR_LEVEL=" + ui->com_colordepth->currentText() + "\n";
+
+        if(ui->cb_customxorg->isChecked())
+        {
+            config += "\n[Custom Xorg Options]\n";
+
+            QLineEdit* xoptions[] = {ui->txt_xoption0, ui->txt_xoption1, ui->txt_xoption2, ui->txt_xoption3, ui->txt_xoption4, ui->txt_xoption5, ui->txt_xoption6, ui->txt_xoption7, ui->txt_xoption8, ui->txt_xoption9, ui->txt_xoption10, ui->txt_xoption11};
+
+            for(int j = 0; j < 12; j++)
+            {
+                if(xoptions[j]->text() != "")
+                {
+                    if(j < 9)
+                    {
+                        config += "X_OPTION_0" + QString::number(j+1);
+                        config += "=" + xoptions[j]->text() + "\n";
+                    }
+                    else if(j >= 9)
+                    {
+                        config += "X_OPTION_" + QString::number(j+1);
+                        config += "=" + xoptions[j]->text() + "\n";
+                    }
+                }
+            }
+
+            if(ui->txt_xmode0->text() != "")
+                config += "X_MODE_0=" + ui->txt_xmode0->text() + "\n";
+
+            if(ui->txt_xmode1->text() != "")
+                config += "X_MODE_1=" + ui->txt_xmode1->text() + "\n";
+
+            if(ui->txt_xmode2->text() != "")
+                config += "X_MODE_2=" + ui->txt_xmode2->text() + "\n";
+        }
+
+       config += "X_BLANKING=" + QString::number(ui->sb_xblanking->value()) + "\n";
+
+       config += "\n[Screen Scripts]\n";
+
+       QComboBox* screens[] = {ui->com_screen0, ui->com_screen1, ui->com_screen2, ui->com_screen3, ui->com_screen4, ui->com_screen5, ui->com_screen6, ui->com_screen7, ui->com_screen8, ui->com_screen9, ui->com_screen10, ui->com_screen11};
+
+       for(int k = 0; k < 12; k++)
+       {
+               if(k < 9)
+               {
+                   config += "SCREEN_0" + QString::number(k+1);
+                   config += "=" + screens[k]->currentText() + "\n";
+               }
+               else if(k >= 9)
+               {
+                   config += "SCREEN_" + QString::number(k+1);
+                   config += "=" + screens[k]->currentText() + "\n";
+               }
+       }
+
+       if(ui->txt_telnethost->text() != "")
+           config += "TELNET_HOST=" + ui->txt_telnethost->text() + "\n";
 
     return config;
 }
@@ -542,5 +604,19 @@ void MainWindow::on_cb_xmouse_toggled(bool checked)
     {
         ui->txt_xmousedev->setEnabled(false);
         ui->txt_xmousepro->setEnabled(false);
+    }
+}
+
+void MainWindow::on_com_autologin_currentIndexChanged(int index)
+{
+    if(index == 1)
+    {
+        ui->txt_autouser->setEnabled(true);
+        ui->txt_autopass->setEnabled(true);
+    }
+    else
+    {
+        ui->txt_autouser->setEnabled(false);
+        ui->txt_autopass->setEnabled(false);
     }
 }

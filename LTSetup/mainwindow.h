@@ -38,6 +38,12 @@ private slots:
 
     void on_cb_customxorg_toggled(bool checked);
 
+    void on_cb_xserver_toggled(bool checked);
+
+    void on_cb_xmouse_toggled(bool checked);
+
+    void on_com_autologin_currentIndexChanged(int index);
+
 private:
     //static int current_version;
     Ui::MainWindow *ui;
