@@ -76,8 +76,16 @@ QString MainWindow::config_compile()
         {
             if(crontabs[i]->text() != "")
             {
-                config += "CRONTAB_" + QString::number(i);
-                config += "=" + crontabs[i]->text() + "\n";
+                if(i < 9)
+                {
+                    config += "CRONTAB_0" + QString::number(i+1);
+                    config += "=" + crontabs[i]->text() + "\n";
+                }
+                else if(i == 9)
+                {
+                    config += "CRONTAB_" + QString::number(i+1);
+                    config += "=" + crontabs[i]->text() + "\n";
+                }
             }
         }
     }
@@ -142,6 +150,48 @@ QString MainWindow::config_compile()
 
     config += "USE_LOCAL_SWAP=" + bool_to_string(ui->cb_localswap->isChecked()) + "\n";
 
+    if (ui->cb_scripts->isChecked())
+    {
+        config += "\n[Scripts and Modules]\n";
+
+        QLineEdit* scripts[] = {ui->txt_RC0, ui->txt_RC1, ui->txt_RC2, ui->txt_RC3, ui->txt_RC4, ui->txt_RC5, ui->txt_RC6, ui->txt_RC7, ui->txt_RC8, ui->txt_RC9};
+        QLineEdit* modules[] = {ui->txt_mod0, ui->txt_mod1, ui->txt_mod2, ui->txt_mod3, ui->txt_mod4, ui->txt_mod5, ui->txt_mod6, ui->txt_mod7, ui->txt_mod8, ui->txt_mod9};
+
+        for(int g = 0; g < 10; g++)
+        {
+            if(modules[g]->text() != "")
+            {
+                if(g < 9)
+                {
+                    config += "MODULE_0" + QString::number(g+1);
+                    config += "=" + modules[g]->text() + "\n";
+                }
+                else if(g == 9)
+                {
+                    config += "MODULE_" + QString::number(g+1);
+                    config += "=" + modules[g]->text() + "\n";
+                }
+            }
+        }
+
+        for(int h = 0; h < 10; h++)
+        {
+            if(scripts[h]->text() != "")
+            {
+                if(h < 9)
+                {
+                    config += "RCFILE_0" + QString::number(h+1);
+                    config += "=" + scripts[h]->text() + "\n";
+                }
+                else if(h == 9)
+                {
+                    config += "RCFILE_" + QString::number(h+1);
+                    config += "=" + scripts[h]->text() + "\n";
+                }
+            }
+        }
+    }
+
     config += "\n[Printer]\n";
 
     if(ui->txt_printerdevice->text() != "")
@@ -191,6 +241,8 @@ QString MainWindow::config_compile()
         if(ui->txt_printeroptions->text() != "")
             config += "PRINTER_0_OPTIONS=" + ui->txt_printeroptions->text() + "\n";
         }
+
+     }
 
         if(ui->txt_printerlist->text() != "")
             config += "LDM_PRINTER_LIST=" + ui->txt_printerlist->text() + "\n";
@@ -264,7 +316,41 @@ QString MainWindow::config_compile()
 
         if(ui->txt_micvolume->text() != "")
             config += "MIC_VOLUME=" + ui->txt_micvolume->text() + "\n";
-    }
+
+        config += "\n[Xorg Parameters]\n";
+
+        config += "USE_XFS=" + bool_to_string(ui->cb_xfs->isChecked()) + "\n";
+
+        if(ui->txt_xfsserver->text() != "")
+            config += "XFS_SERVER=" + ui->txt_xfsserver->text() + "\n";
+
+        if(ui->cb_configx->isChecked())
+            config += "CONFIGURE_X=True";
+
+        if(ui->txt_xconfig->text() != "")
+            config += "X_CONF=" + ui->txt_xconfig->text() + "\n";
+
+        if(ui->sb_xramperc->value() > 100)
+            config += "X_RAMPERC=100\n";
+        else
+            config += "X_RAMPERC=" + QString::number(ui->sb_xramperc->value()) + "\n";
+
+        if(ui->txt_xvirtual->text() != "")
+            config += "X_VIRTUAL=" + ui->txt_xvirtual->text() + "\n";
+
+        if(ui->txt_xdmserver->text() != "")
+            config += "XDM_SERVER=" + ui->txt_xdmserver->text() + "\n";
+
+        if(ui->cb_xserver->isChecked())
+            config += "XSERVER=" + ui->txt_xserver->text() + "\n";
+
+        if(ui->cb_xmouse->isChecked())
+        {
+            config += "X_MOUSE_DEVICE=" + ui->txt_xmousedev->text() + "\n";
+            config += "X_MOUSE_PROTOCOL=" + ui->txt_xmousepro->text() + "\n";
+        }
+
+
     return config;
 }
 
@@ -435,4 +521,26 @@ void MainWindow::on_cb_customxorg_toggled(bool checked)
             ui->tabWidget->removeTab(7);
             }
         }
+}
+
+void MainWindow::on_cb_xserver_toggled(bool checked)
+{
+    if(checked)
+        ui->txt_xserver->setEnabled(true);
+    else
+        ui->txt_xserver->setEnabled(false);
+}
+
+void MainWindow::on_cb_xmouse_toggled(bool checked)
+{
+    if(checked)
+    {
+        ui->txt_xmousedev->setEnabled(true);
+        ui->txt_xmousepro->setEnabled(true);
+    }
+    else
+    {
+        ui->txt_xmousedev->setEnabled(false);
+        ui->txt_xmousepro->setEnabled(false);
+    }
 }

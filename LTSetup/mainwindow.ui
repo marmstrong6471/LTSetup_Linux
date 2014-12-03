@@ -24,7 +24,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>6</number>
     </property>
     <widget class="QWidget" name="tab_general">
      <attribute name="title">
@@ -530,70 +530,70 @@
       </property>
       <layout class="QVBoxLayout" name="vl_scripts_02">
        <item>
-        <widget class="QLineEdit" name="txt_RC_01">
+        <widget class="QLineEdit" name="txt_RC0">
          <property name="RCFILE_01=" stdset="0">
           <string/>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="txt_RC_02">
+        <widget class="QLineEdit" name="txt_RC1">
          <property name="RCFILE_02=" stdset="0">
           <string/>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="txt_RC_03">
+        <widget class="QLineEdit" name="txt_RC2">
          <property name="RCFILE_03=" stdset="0">
           <string/>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="txt_RC_04">
+        <widget class="QLineEdit" name="txt_RC3">
          <property name="RCFILE_04=" stdset="0">
           <string/>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="txt_RC_05">
+        <widget class="QLineEdit" name="txt_RC4">
          <property name="RCFILE_05=" stdset="0">
           <string/>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="txt_RC_06">
+        <widget class="QLineEdit" name="txt_RC5">
          <property name="RCFILE_06=" stdset="0">
           <string/>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="txt_RC_07">
+        <widget class="QLineEdit" name="txt_RC6">
          <property name="RCFILE_07=" stdset="0">
           <string/>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="txt_RC_08">
+        <widget class="QLineEdit" name="txt_RC7">
          <property name="RCFILE_08=" stdset="0">
           <string/>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="txt_RC_09">
+        <widget class="QLineEdit" name="txt_RC8">
          <property name="RCFILE_09=" stdset="0">
           <string/>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="txt_RC_10">
+        <widget class="QLineEdit" name="txt_RC9">
          <property name="RCFILE_10=" stdset="0">
           <string/>
          </property>
@@ -694,70 +694,70 @@
       </property>
       <layout class="QVBoxLayout" name="vl_scripts_04">
        <item>
-        <widget class="QLineEdit" name="txt_mod_01">
+        <widget class="QLineEdit" name="txt_mod0">
          <property name="MODULE_01=" stdset="0">
           <string/>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="txt_mod_02">
+        <widget class="QLineEdit" name="txt_mod1">
          <property name="MODULE_02=" stdset="0">
           <string/>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="txt_mod_03">
+        <widget class="QLineEdit" name="txt_mod2">
          <property name="MODULE_03=" stdset="0">
           <string/>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="txt_mod_04">
+        <widget class="QLineEdit" name="txt_mod3">
          <property name="MODULE_04=" stdset="0">
           <string/>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="txt_mod_05">
+        <widget class="QLineEdit" name="txt_mod4">
          <property name="MODULE_05=" stdset="0">
           <string/>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="txt_mod_06">
+        <widget class="QLineEdit" name="txt_mod5">
          <property name="MODULE_06=" stdset="0">
           <string/>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="txt_mod_07">
+        <widget class="QLineEdit" name="txt_mod6">
          <property name="MODULE_07=" stdset="0">
           <string/>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="txt_mod_08">
+        <widget class="QLineEdit" name="txt_mod7">
          <property name="MODULE_08=" stdset="0">
           <string/>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="txt_mod_09">
+        <widget class="QLineEdit" name="txt_mod8">
          <property name="MODULE_09=" stdset="0">
           <string/>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="txt_mod_10">
+        <widget class="QLineEdit" name="txt_mod9">
          <property name="MODULE_10=" stdset="0">
           <string/>
          </property>
@@ -1336,7 +1336,7 @@
        <item>
         <widget class="QCheckBox" name="cb_mouseemu">
          <property name="text">
-          <string>X Mouse Emulate 3BTN</string>
+          <string>Emulate 3-button Mouse</string>
          </property>
          <property name="X_MOUSE_EMULATE3BTN=" stdset="0">
           <bool>false</bool>
@@ -1363,6 +1363,20 @@
          </property>
         </widget>
        </item>
+       <item>
+        <widget class="QCheckBox" name="cb_xserver">
+         <property name="text">
+          <string>Override X Server Autodetect</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="cb_xmouse">
+         <property name="text">
+          <string>Manual Mouse Configuration</string>
+         </property>
+        </widget>
+       </item>
       </layout>
      </widget>
      <widget class="QWidget" name="verticalLayoutWidget_15">
@@ -1385,7 +1399,7 @@
        <item>
         <widget class="QLabel" name="lb_xramperc">
          <property name="text">
-          <string>X Ram Percent</string>
+          <string>X RAM Percent</string>
          </property>
         </widget>
        </item>
@@ -1423,12 +1437,12 @@
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="txt_xramperc">
-         <property name="text">
-          <string>100</string>
+        <widget class="QSpinBox" name="sb_xramperc">
+         <property name="maximum">
+          <number>100</number>
          </property>
-         <property name="X_RAMPERC=" stdset="0">
-          <number>0</number>
+         <property name="value">
+          <number>100</number>
          </property>
         </widget>
        </item>
@@ -1471,7 +1485,7 @@
        <item>
         <widget class="QLabel" name="lb_xserver">
          <property name="text">
-          <string>X Server</string>
+          <string>X Server Override</string>
          </property>
         </widget>
        </item>
@@ -1517,6 +1531,9 @@
        </item>
        <item>
         <widget class="QLineEdit" name="txt_xserver">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
          <property name="XSERVER=" stdset="0">
           <string/>
          </property>
@@ -1524,6 +1541,9 @@
        </item>
        <item>
         <widget class="QLineEdit" name="txt_xmousedev">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
          <property name="X_MOUSE_DEVICE=" stdset="0">
           <string/>
          </property>
@@ -1531,6 +1551,9 @@
        </item>
        <item>
         <widget class="QLineEdit" name="txt_xmousepro">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
          <property name="X_MOUSE_PROTOCOL=" stdset="0">
           <string/>
          </property>
