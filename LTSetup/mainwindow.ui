@@ -24,7 +24,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>9</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="tab_general">
      <attribute name="title">
@@ -57,6 +57,9 @@
         <widget class="QCheckBox" name="cb_localapp">
          <property name="text">
           <string>Local Apps</string>
+         </property>
+         <property name="checked">
+          <bool>false</bool>
          </property>
          <property name="LOCAL_APPS=" stdset="0">
           <string/>
@@ -2405,10 +2408,10 @@
      <widget class="QWidget" name="verticalLayoutWidget_25">
       <property name="geometry">
        <rect>
-        <x>120</x>
+        <x>110</x>
         <y>0</y>
         <width>81</width>
-        <height>261</height>
+        <height>271</height>
        </rect>
       </property>
       <layout class="QVBoxLayout" name="vl_ldm02">
@@ -2446,73 +2449,41 @@
         </widget>
        </item>
        <item>
-        <widget class="QComboBox" name="com_directx">
-         <item>
-          <property name="text">
-           <string>False</string>
-          </property>
-         </item>
-         <item>
-          <property name="text">
-           <string>True</string>
-          </property>
-         </item>
+        <widget class="QCheckBox" name="cb_directx">
+         <property name="text">
+          <string/>
+         </property>
         </widget>
        </item>
        <item>
-        <widget class="QComboBox" name="com_guestlogin">
-         <item>
-          <property name="text">
-           <string>False</string>
-          </property>
-         </item>
-         <item>
-          <property name="text">
-           <string>True</string>
-          </property>
-         </item>
+        <widget class="QCheckBox" name="cb_guestlogin">
+         <property name="text">
+          <string/>
+         </property>
         </widget>
        </item>
        <item>
-        <widget class="QComboBox" name="com_syslog">
-         <item>
-          <property name="text">
-           <string>False</string>
-          </property>
-         </item>
-         <item>
-          <property name="text">
-           <string>True</string>
-          </property>
-         </item>
+        <widget class="QCheckBox" name="cb_syslog">
+         <property name="text">
+          <string/>
+         </property>
         </widget>
        </item>
        <item>
-        <widget class="QComboBox" name="com_netcompress">
-         <item>
-          <property name="text">
-           <string>False</string>
-          </property>
-         </item>
-         <item>
-          <property name="text">
-           <string>True</string>
-          </property>
-         </item>
+        <widget class="QCheckBox" name="cb_netcompress">
+         <property name="text">
+          <string/>
+         </property>
         </widget>
        </item>
        <item>
-        <widget class="QComboBox" name="com_symlinks">
-         <item>
-          <property name="text">
-           <string>True</string>
-          </property>
-         </item>
-         <item>
-          <property name="text">
-           <string>False</string>
-          </property>
-         </item>
+        <widget class="QCheckBox" name="cb_symlinks">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
         </widget>
        </item>
       </layout>
@@ -2589,7 +2560,11 @@
       </property>
       <layout class="QVBoxLayout" name="vl_ldm04">
        <item>
-        <widget class="QLineEdit" name="txt_logtimeout"/>
+        <widget class="QSpinBox" name="sb_logtimeout">
+         <property name="maximum">
+          <number>600</number>
+         </property>
+        </widget>
        </item>
        <item>
         <widget class="QLineEdit" name="txt_autouser">
@@ -2617,7 +2592,7 @@
        <item>
         <widget class="QLineEdit" name="txt_xsession">
          <property name="text">
-          <string>Xsession</string>
+          <string/>
          </property>
         </widget>
        </item>
@@ -2640,6 +2615,9 @@
       <property name="text">
        <string>Local Apps</string>
       </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
       <property name="LOCAL_APPS=" stdset="0">
        <bool>false</bool>
       </property>
@@ -2648,7 +2626,7 @@
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>50</y>
+        <y>30</y>
         <width>111</width>
         <height>17</height>
        </rect>
@@ -2663,9 +2641,9 @@
      <widget class="QLabel" name="label_64">
       <property name="geometry">
        <rect>
-        <x>70</x>
+        <x>100</x>
         <y>90</y>
-        <width>131</width>
+        <width>111</width>
         <height>16</height>
        </rect>
       </property>
@@ -2673,25 +2651,12 @@
        <string>Local Apps Menu Items</string>
       </property>
      </widget>
-     <widget class="QTextEdit" name="txt_localappmenu">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>110</y>
-        <width>291</width>
-        <height>151</height>
-       </rect>
-      </property>
-      <property name="LOCAL_APPS_MENU_ITEMS=" stdset="0">
-       <string/>
-      </property>
-     </widget>
      <widget class="QLabel" name="label_65">
       <property name="geometry">
        <rect>
-        <x>450</x>
+        <x>440</x>
         <y>90</y>
-        <width>131</width>
+        <width>111</width>
         <height>20</height>
        </rect>
       </property>
@@ -2699,17 +2664,43 @@
        <string>Local Apps Whitelist</string>
       </property>
      </widget>
-     <widget class="QTextEdit" name="txt_appwhitelist">
+     <widget class="QLineEdit" name="txt_localappmenu">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
       <property name="geometry">
        <rect>
-        <x>353</x>
-        <y>110</y>
-        <width>291</width>
-        <height>151</height>
+        <x>10</x>
+        <y>120</y>
+        <width>301</width>
+        <height>121</height>
        </rect>
       </property>
-      <property name="LOCAL_APPS_WHITELIST=" stdset="0">
-       <string/>
+     </widget>
+     <widget class="QLineEdit" name="txt_appwhitelist">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>120</y>
+        <width>301</width>
+        <height>121</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="cb_whitelist">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>50</y>
+        <width>131</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Use Local App Whitelist</string>
       </property>
      </widget>
     </widget>

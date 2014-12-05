@@ -44,6 +44,12 @@ private slots:
 
     void on_com_autologin_currentIndexChanged(int index);
 
+    void on_sb_logtimeout_valueChanged(int arg1);
+
+    void on_cb_localappsmenu_toggled(bool checked);
+
+    void on_cb_whitelist_toggled(bool checked);
+
 private:
     //static int current_version;
     Ui::MainWindow *ui;

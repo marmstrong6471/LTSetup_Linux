@@ -413,6 +413,82 @@ QString MainWindow::config_compile()
        if(ui->txt_telnethost->text() != "")
            config += "TELNET_HOST=" + ui->txt_telnethost->text() + "\n";
 
+       config += "\n[LDM Options]\n";
+
+       if(ui->com_autologin->currentIndex() == 1)
+       {
+           config += "LDM_AUTOLOGIN=True\n";
+
+           if(ui->txt_autouser->text() != "")
+               config += "LDM_USERNAME=" + ui->txt_autouser->text() + "\n";
+
+           if(ui->txt_autopass->text() != "")
+               config += "LDM_PASSWORD=" + ui->txt_autopass->text() + "\n";
+       }
+       else
+           config += "LDM_AUTOLOGIN=False\n";
+
+        switch(ui->com_debug->currentIndex())
+        {
+            case 0:
+                break;
+            case 1:
+                config += "LDM_DEBUG=True\n";
+                break;
+            case 2:
+                config += "LDM_DEBUG=False\n";
+                break;
+        }
+
+        config += "LDM_DIRECTX=" + bool_to_string(ui->cb_directx->isChecked()) + "\n";
+
+        config += "LDM_GUESTLOGIN=" + bool_to_string(ui->cb_guestlogin->isChecked()) + "\n";
+
+        if(ui->sb_logtimeout->value() > 0)
+        {
+            config += "LDM_LOGIN_TIMEOUT=" + QString::number(ui->sb_logtimeout->value()) + "\n";
+
+            if(ui->txt_autouser->text() != "")
+                config += "LDM_USERNAME=" + ui->txt_autouser->text() + "\n";
+
+            if(ui->txt_autopass->text() != "")
+                config += "LDM_PASSWORD=" + ui->txt_autopass->text() + "\n";
+        }
+
+        config += "LDM_SYSLOG=" + bool_to_string(ui->cb_syslog->isChecked()) + "\n";
+
+        if(ui->txt_language->text() != "")
+            config += "LDM_LANGUAGE=" + ui->txt_language->text() + "\n";
+
+        config += "NETWORK_COMPRESSION=" + bool_to_string(ui->cb_netcompress->isChecked()) + "\n";
+
+        if(ui->txt_sshoverride->text() != "")
+            config += "SSH_OVERRIDE_PORT=" + ui->txt_sshoverride->text() + "\n";
+
+        config += "SSH_FOLLOW_SYMLINKS=" + bool_to_string(ui->cb_symlinks->isChecked()) + "\n";
+
+        if(ui->txt_session->text() != "")
+            config += "LDM_SESSION=" + ui->txt_session->text() + "\n";
+
+        if(ui->txt_xsession->text() != "")
+            config += "LDM_XSESSION=" + ui->txt_xsession->text() + "\n";
+        else
+            config += "LDM_XSESSION=Xsession\n";
+
+        config += "\n[Local Applications]\n";
+
+        config += "LOCAL_APPS=" + bool_to_string(ui->cb_localapps->isChecked()) + "\n";
+
+        config += "LOCAL_APPS_MENU=" + bool_to_string(ui->cb_localappsmenu->isChecked()) + "\n";
+
+        if(ui->cb_localappsmenu->isChecked() && ui->txt_localappmenu->text() != "")
+            config += "LOCAL_APPS_MENU_ITEMS=" + ui->txt_localappmenu->text() + "\n";
+
+        if(ui->txt_appwhitelist->text() != "")
+            config += "LOCAL_APPS_WHITELIST=" + ui->txt_appwhitelist->text() + "\n";
+
+        config += "\n[End Config]\n";
+
     return config;
 }
 
@@ -613,10 +689,44 @@ void MainWindow::on_com_autologin_currentIndexChanged(int index)
     {
         ui->txt_autouser->setEnabled(true);
         ui->txt_autopass->setEnabled(true);
+        ui->sb_logtimeout->setEnabled(false);
     }
     else
     {
         ui->txt_autouser->setEnabled(false);
         ui->txt_autopass->setEnabled(false);
+        ui->sb_logtimeout->setEnabled(true);
     }
+}
+
+void MainWindow::on_sb_logtimeout_valueChanged(int arg1)
+{
+    if(arg1 > 0)
+    {
+        ui->txt_autouser->setEnabled(true);
+        ui->txt_autopass->setEnabled(true);
+        ui->com_autologin->setEnabled(false);
+    }
+    else
+    {
+        ui->txt_autouser->setEnabled(false);
+        ui->txt_autopass->setEnabled(false);
+        ui->com_autologin->setEnabled(true);
+    }
+}
+
+void MainWindow::on_cb_localappsmenu_toggled(bool checked)
+{
+    if(checked)
+        ui->txt_localappmenu->setEnabled(true);
+    else
+        ui->txt_localappmenu->setEnabled(false);
+}
+
+void MainWindow::on_cb_whitelist_toggled(bool checked)
+{
+    if(checked)
+        ui->txt_appwhitelist->setEnabled(true);
+    else
+        ui->txt_appwhitelist->setEnabled(false);
 }
