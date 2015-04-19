@@ -1,4 +1,4 @@
-LTSetup
+LTSetup_Linux
 =======
 
-GUI application using the MinGW toolchain and Qt 3 to generate lts.conf files for use with LTSP
+GUI application using the GCC toolchain and Qt 5.4 with Qt Creator 3 to generate a lts.conf file for use with LTSP.
