@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>VersionDialog</class>
+ <widget class="QDialog" name="VersionDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>224</width>
+    <height>205</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Select Version</string>
+  </property>
+  <widget class="QComboBox" name="combox_version">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>80</y>
+     <width>151</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>10.04 LTS</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>10.10</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>11.04</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>11.10</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>12.04 LTS</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>12.10</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>13.04</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>13.10</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>14.04 LTS</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>14.10</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>20</y>
+     <width>151</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Please select your LTSP version</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>140</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Okay</string>
+   </property>
+   <property name="default">
+    <bool>true</bool>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
